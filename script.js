@@ -382,18 +382,10 @@
       // Loader
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
-  const content = document.getElementById("site-content");
 
-  setTimeout(() => {
-    loader.style.opacity = "0";
-    loader.style.transition = "opacity 0.4s ease";
+  // durata di attesa prima di far partire la scomparsa
+  const waitTime = 1500; // 1,5 secondi = 1500ms
 
-    content.style.opacity = "1";
-    content.style.pointerEvents = "auto";
-    content.style.transition = "opacity 0.4s ease";
-        
-    const waitTime = 1500; // 1,5 secondi = 1500ms
-    
   setTimeout(() => {
     loader.style.transition = "opacity 0.4s ease";
     loader.style.opacity = "0";
