@@ -384,18 +384,16 @@ window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   const content = document.getElementById("site-content");
 
-  const waitTime = 1500; // 1,5 secondi
-
   setTimeout(() => {
     loader.style.transition = "opacity 0.4s ease";
     loader.style.opacity = "0";
 
-    content.classList.add("visible"); // mostra il sito
+    if(content) content.classList.add("visible"); // mostra il sito
 
     setTimeout(() => {
       loader.style.display = "none";
-    }, 400); // fine transizione
-  }, waitTime);
+    }, 400);
+  }, 1500); // 1,5 secondi di attesa
 });
 
 
