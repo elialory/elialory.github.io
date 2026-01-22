@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Galleria personale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: white;
+      color: #111;
+    }
+
+    /* Banner */
+    .banner {
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("General_pics/banner_image.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      flex-direction: column;
+    }
+
+    .banner h1 {
+      font-family: 'Kaushan Script', cursive;
+      letter-spacing: 1px;
+      /* spazio tra lettere leggero */
+      font-size: 3rem;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Sezioni artworks */
+    .row {
+      display: flex;
+      gap: 50px;
+      padding: 80px;
+      align-items: stretch;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      border-radius: 12px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 0.8s forwards;
+      animation-delay: 0.2s;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      padding: 60px;
+      margin-bottom: 60px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .row::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: var(--bg-img);
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      filter: blur(4px);
+      z-index: 0;
+      border-radius: 16px;
+    }
+
+    .row:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .row:hover .info-wrapper {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .row::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      width: 60%;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.15);
+      transform: translateX(-50%);
+    }
+
+    .row.active {
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .image-large img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      height: 40vh;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+    }
+
+    .image-large,
+    .info-wrapper {
+      position: relative;  /* crea un nuovo stacking context */
+      z-index: 1;          /* sopra ::before */
+    }
+    
+    .image-large img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .info-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*height: 100%;*/
+      /*min-height: 100%;*/
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      color: #111;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .info-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .info-wrapper .info {
+      position: relative;
+      z-index: 1;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .label {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .epitet {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    .text {
+      font-family: 'Playfair Display', serif;
+      max-width: 300px;
+      font-size: 0.9rem;
+    }
+
+    .thumb {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .thumb:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .row:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .row:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .filter-buttons button {
+      padding: 8px 18px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background-color: #fff;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .filter-buttons button:hover,
+    .filter-buttons button.active {
+      background-color: #333;
+      color: #fff;
+    }
+
+
+
+    /* Mobile */
+    @media(max-width:900px) {
+
+      .row,
+      .row.reverse {
+        flex-direction: column;
+        padding: 40px;
+      }
+
+      .image-large img {
+        height: 50vh;
+      }
+    }
+
+
+    .lightbox {
+      display: none;
+      /* nascosto di default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      /* sfondo scuro trasparente */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    #lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 3rem;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="banner">
+    <h1>Eye of the Beholder's</h1>
+    <p>Dakimakura Collection</p>
+  </header>
+
+  <div class="filter-buttons">
+    <button data-category="All" class="active">All</button>
+    <button data-category="Aang">Avatar - The Last Airbender</button>
+    <button data-category="Korra">Avatar - The Legend of Korra</button>
+  </div>
+
+  <!-- Contenitore per artworks -->
+  <div id="artworks-container"></div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+
+    const data = [
+      {
+        "title": "Katara",
+        "nick": "The Water Healer",
+        "description": "Gentle yet passionate, Katara uses waterbending for sensual experience. Her caring nature makes you feel desired.",
+        "square_image": "Artworks/Artwork1/square.jpg",
+        "vertical_image": "Artworks/Artwork1/vertical.jpg",
+        "color": "water",
+        "category": "Aang"
+      },
+      {
+        "title": "Toph Bei Phong",
+        "nick": "The Blind Bandit",
+        "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
+        "square_image": "Artworks/Artwork2/square.jpg",
+        "vertical_image": "Artworks/Artwork2/vertical.jpg",
+        "color": "earth",
+        "category": "Aang"
+      },
+      {
+        "title": "Azula",
+        "nick": "The Blue Flame",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/Artwork2/square.jpg",
+        "vertical_image": "Artworks/Artwork2/vertical.jpg",
+        "color": "fire",
+        "category": "Aang"
+      },
+      {
+        "title": "Korra",
+        "nick": "The Avatar",
+        "description": "Powerful and Passionate, Korra uses bending for an intense experience. Dominant yet craves tenderness. A wild ride of pleasure.",
+        "square_image": "Artworks/Artwork2/square.jpg",
+        "vertical_image": "Artworks/Artwork2/vertical.jpg",
+        "color": "water",
+        "category": "Korra"
+      }
+    ];
+
+    const elementColors = {
+      water: "#294364",
+      fire: "#930706",
+      air: "#FFA500",
+      earth: "#005A00"
+    };
+
+    const container = document.getElementById('artworks-container');
+
+    function renderArtworks(filterCategory = "All") {
+
+      container.innerHTML = ""; // svuota prima di ridisegnare
+
+      let visibleIndex = 0; // per alternanza layout
+
+      data.forEach((artwork) => {
+
+        if (filterCategory !== "All" && artwork.category !== filterCategory) return;
+
+        const rowClass = visibleIndex % 2 === 0 ? 'row' : 'row reverse';
+
+        const section = document.createElement('section');
+
+        const baseColor = elementColors[artwork.color] || "#ffffff";
+        section.style.background = `
+          linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.1)),
+          ${baseColor}
+        `;
+
+        section.className = rowClass;
+        section.innerHTML = `
+          <div class="image-large">
+            <img src="${artwork.vertical_image}" alt="${artwork.title}">
+          </div>
+          <div class="info-wrapper">
+            <div class="info">
+              <p class="label">${artwork.title}</p>
+              <p class="epitet">${artwork.nick}</p>
+              
+              <p class="text">${artwork.description}</p>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(section);
+
+        //const infoWrapper = section.querySelector('.info-wrapper');
+        //infoWrapper.style.setProperty('--bg-img', `url(${artwork.square_image})`);
+
+        section.style.setProperty("--bg-img", `url(${artwork.square_image})`);
+
+        // animazione con delay leggero per ogni riga
+        setTimeout(() => {
+          section.classList.add('visible');
+        }, visibleIndex * 100); // 100ms tra le righe
+        visibleIndex++;
+
+        section.classList.add("active");
+      });
+
+      attachLightboxListeners();
+    }
+
+    // Seleziona tutti
+    document.querySelectorAll('.filter-buttons button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-buttons button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const category = btn.getAttribute('data-category');
+        renderArtworks(category);
+      });
+    });
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    // Funzione per aprire lightbox
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt;
+      lightbox.style.display = 'flex';
+    }
+
+    // Funzione per chiudere
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+      lightboxImg.src = '';
+    }
+
+    // Ascolta click sul close
+    lightboxClose.addEventListener('click', closeLightbox);
+
+    // Chiude cliccando sullo sfondo
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Aggiungi listener alle immagini verticali dopo il render
+    function attachLightboxListeners() {
+      document.querySelectorAll('.image-large img').forEach(img => {
+        img.style.cursor = 'pointer'; // indica che si può cliccare
+        img.addEventListener('click', () => {
+          openLightbox(img.src, img.alt);
+        });
+      });
+    }
+
+    // Dopo ogni renderArtworks(), chiama attachLightboxListeners()
+    renderArtworks(); // iniziale
+    attachLightboxListeners();
+
+    // Aggiorna listeners quando si filtra
+    document.querySelectorAll('.filter-buttons button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-buttons button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const category = btn.getAttribute('data-category');
+        renderArtworks(category);
+        attachLightboxListeners(); // aggiorna listener per le nuove immagini filtrate
+      });
+    });
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+    // Inizializzazione
+    renderArtworks();
+
+  </script>
+
+</body>
+
+</html>
