@@ -133,16 +133,18 @@
       width: auto;
       max-width: 100%;
       aspect-ratio: 9 / 16;
-      object-fit: contain; 
+      object-fit: contain;
       object-position: top center;
     }
 
     .image-large,
     .info-wrapper {
-      position: relative;  /* crea un nuovo stacking context */
-      z-index: 1;          /* sopra ::before */
+      position: relative;
+      /* crea un nuovo stacking context */
+      z-index: 1;
+      /* sopra ::before */
     }
-    
+
     .image-large img:hover {
       transform: scale(1.1);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -336,29 +338,32 @@
     const data = [
       {
         "title": "Katara",
-        "nick": "The Water Healer",
+        "nick": "The Water Healer.",
         "description": "Gentle yet passionate, Katara uses waterbending for sensual experience. Her caring nature makes you feel desired.",
         "square_image": "Artworks/Katara/square.jpg",
         "vertical_image": "Artworks/Katara/vertical.jpg",
         "color": "water",
+        "stato": 1,
         "category": "Aang"
       },
       {
         "title": "Toph Bei Phong",
-        "nick": "The Blind Bandit",
+        "nick": "The Blind Bandit.",
         "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
         "square_image": "Artworks/Toph/square.jpg",
         "vertical_image": "Artworks/Toph/vertical.jpg",
         "color": "earth",
+        "stato": 1,
         "category": "Aang"
       },
       {
         "title": "Azula",
-        "nick": "The Blue Flame",
+        "nick": "The Blue Flame.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Azula/square.jpg",
         "vertical_image": "Artworks/Azula/vertical.jpg",
         "color": "fire",
+        "stato": 1,
         "category": "Aang"
       },
       {
@@ -368,33 +373,207 @@
         "square_image": "Artworks/June/square.jpg",
         "vertical_image": "Artworks/June/vertical.jpg",
         "color": "fire",
+        "stato": 1,
         "category": "Aang"
       },
       {
         "title": "Suki",
-        "nick": "Kyoshi's warrior ",
+        "nick": "Kyoshi's warrior.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Suki/square.jpg",
         "vertical_image": "Artworks/Suki/vertical.jpg",
         "color": "earth",
+        "stato": 1,
+        "category": "Aang"
+      },
+      {
+        "title": "Princess Yue",
+        "nick": "Lunar princess.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/Yue/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "water",
+        "stato": 2,
+        "category": "Aang"
+      },
+      {
+        "title": "Ty Lee",
+        "nick": "Best Girl.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/TyLee/square.jpg",
+        "vertical_image": "Artworks/TyLee/vertical.jpg",
+        "color": "air",
+        "stato": 1,
+        "category": "Aang"
+      },
+      {
+        "title": "Kya",
+        "nick": "Southern Tribe's Milf.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "water",
+        "stato": 2,
+        "category": "Aang"
+      },
+      {
+        "title": "Ursa",
+        "nick": "Too good for Ozai.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "fire",
+        "stato": 2,
+        "category": "Aang"
+      },
+      {
+        "title": "Jo Dee",
+        "nick": "There is no Rule34.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "earth",
+        "stato": 2,
+        "category": "Aang"
+      },
+      {
+        "title": "Jin",
+        "nick": "Too good for Zuko.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "earth",
+        "stato": 2,
         "category": "Aang"
       },
       {
         "title": "Korra",
-        "nick": "The Avatar",
+        "nick": "The Avatar.",
         "description": "Powerful and Passionate, Korra uses bending for an intense experience. Dominant yet craves tenderness. A wild ride of pleasure.",
         "square_image": "Artworks/Korra/square.jpg",
         "vertical_image": "Artworks/Korra/vertical.jpg",
         "color": "water",
+        "stato": 1,
         "category": "Korra",
+      },
+      {
+        "title": "Opal",
+        "nick": "Look... don't treat her bad. She's a good girl.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "earth",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Pema",
+        "nick": "4 kids. Still sexy. Best Milf.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "air",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Lin Beifong",
+        "nick": "Police Officer Roleplay.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "earth",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Suyin Beifong",
+        "nick": "I don't really know what to write here.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "earth",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Kya",
+        "nick": "Southern Tribe's Gilf.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "water",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Eska",
+        "nick": "NOT DESKA!",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "water",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Ming Wa",
+        "nick": "I don't want to fix her. I want her to ruin me.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "water",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "P'Li",
+        "nick": "Her eye is up there.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "fire",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Zhu Li",
+        "nick": "She did a thing.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "fire",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Kuvira",
+        "nick": "VVhen she vvas there the trains arrived on time.",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "earth",
+        "stato": 2,
+        "category": "Korra"
+      },
+      {
+        "title": "Asami",
+        "nick": "Mistress of the Avatar",
+        "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
+        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "color": "fire",
+        "stato": 2,
+        "category": "Korra"
       },
       {
         "title": "Raava",
         "nick": "The Ravatar",
         "description": "hah ah got it? No... Caus- nevermind",
-        "square_image": "Artworks/Raava/square.jpg",
+        "square_image": "Artworks/PlaceHolder/square.jpg",
         "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
-        "color": "water",
+        "color": "air",
+        "stato": 2,
         "category": "Korra",
       }
     ];
@@ -437,11 +616,12 @@
             <div class="info">
               <p class="label">${artwork.title}</p>
               <p class="epitet">${artwork.nick}</p>
-              
-              <p class="text">${artwork.description}</p>
             </div>
           </div>
         `;
+        
+
+        // <p class="text">${artwork.description}</p>
 
         container.appendChild(section);
 
@@ -525,7 +705,14 @@
     });
     ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+    data.sort((a, b) => {
+      // Prima confronto numerico per 'stato'
+      if (a.stato !== b.stato) {
+        return a.stato - b.stato; // 1 prima di 2
+      }
+      // Poi confronto alfabetico per 'title'
+      return a.title.localeCompare(b.title);
+    });
 
     // Inizializzazione
     renderArtworks();
