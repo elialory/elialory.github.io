@@ -386,10 +386,17 @@ window.addEventListener("load", () => {
 
   setTimeout(() => {
     loader.style.opacity = "0";
-    content.classList.add("visible");
+    loader.style.transition = "opacity 0.4s ease";
 
-    setTimeout(() => loader.style.display = "none", 400);
-  }, 300);
+    content.style.opacity = "1";
+    content.style.pointerEvents = "auto";
+    content.style.transition = "opacity 0.4s ease";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 400);
+
+  }, 300); // tempo minimo di visibilità
 });
       // Inizializzazione
       renderArtworks();
