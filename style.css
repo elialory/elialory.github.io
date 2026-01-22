@@ -137,6 +137,15 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
 
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .info-wrapper {
       display: flex;
       align-items: center;
