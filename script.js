@@ -391,12 +391,17 @@ window.addEventListener("load", () => {
     content.style.opacity = "1";
     content.style.pointerEvents = "auto";
     content.style.transition = "opacity 0.4s ease";
+        
+    const waitTime = 1500; // 1,5 secondi = 1500ms
+    
+  setTimeout(() => {
+    loader.style.transition = "opacity 0.4s ease";
+    loader.style.opacity = "0";
 
     setTimeout(() => {
       loader.style.display = "none";
-    }, 400);
-
-  }, 300); // tempo minimo di visibilità
+    }, 400); // tempo della transizione
+  }, waitTime);
 });
       // Inizializzazione
       renderArtworks();
