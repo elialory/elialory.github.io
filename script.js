@@ -382,18 +382,23 @@
       // Loader
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
+  const content = document.getElementById("site-content");
 
-  // durata di attesa prima di far partire la scomparsa
-  const waitTime = 1500; // 1,5 secondi = 1500ms
+  const waitTime = 1500; // 1,5 secondi
 
   setTimeout(() => {
     loader.style.transition = "opacity 0.4s ease";
     loader.style.opacity = "0";
 
+    content.classList.add("visible"); // mostra il sito
+
     setTimeout(() => {
       loader.style.display = "none";
-    }, 400); // tempo della transizione
+    }, 400); // fine transizione
   }, waitTime);
 });
+
+
+
       // Inizializzazione
       renderArtworks();
