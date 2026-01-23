@@ -60,6 +60,16 @@
           "category": "Aang"
         },
         {
+          "title": "Mai",
+          "nick": "...",
+          "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
+          "square_image": "Artworks/Mai/square.jpg",
+          "vertical_image": "Artworks/Mai/vertical.jpg",
+          "color": "fire",
+          "stato": 1,
+          "category": "Aang"
+        },
+        {
           "title": "Ty Lee",
           "nick": "Best Girl.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
