@@ -1,4 +1,7 @@
 
+console.log("SCRIPT JS CARICATO");
+
+
       const data = [
         {
           "title": "Katara",
@@ -380,6 +383,7 @@
       });
 
       // Loader
+console.log("START DEL LISTENER");
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
   if (loader) loader.style.display = "none";
