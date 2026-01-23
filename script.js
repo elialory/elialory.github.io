@@ -64,7 +64,7 @@
           "nick": "...",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Mai/square.jpg",
-          "vertical_image": "Artworks/Mai/vertical.jpg",
+          "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
           "color": "fire",
           "stato": 1,
           "category": "Aang"
