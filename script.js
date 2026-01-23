@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // dopo il fade-out lo rimuoviamo
     setTimeout(() => {
       loader.remove();
-    }, 400);
+    }, 800);
 
   }, 1500);
 });
