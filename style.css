@@ -112,7 +112,7 @@
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
 
-    /*dakimakura Verticale*/
+    /*Image Large - Dakimakura Verticale*/
     .image-large {
        outline: 3px solid red;
        height: 30vh;
@@ -122,6 +122,7 @@
        justify-content: center;
        align-items: center;
        pointer-events: none;
+       z-index: 3;
     }
     
     .image-large img {
@@ -153,7 +154,8 @@
       flex-direction: column;
       justify-content: center;
     }
-
+    
+    /*Info Wrapper*/
     .info-wrapper {
       display: flex;
       align-items: center;
@@ -171,6 +173,7 @@
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border-left: 1px solid rgba(255, 255, 255, 0.3);
+      z-index: 2;
     }
 
     .info-wrapper::before {
@@ -189,6 +192,11 @@
     .info-wrapper .info {
       position: relative;
       z-index: 1;
+    }
+    
+    .info-wrapper::before,
+    .info-wrapper::after {
+      pointer-events: none;
     }
 
     .info {
