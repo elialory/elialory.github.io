@@ -119,6 +119,7 @@
        display: flex;
        justify-content: center;
        align-items: center;
+       pointer-events: none;
     }
     
     .image-large img {
@@ -128,6 +129,7 @@
       width: auto;
       max-width: 100%;
       object-position: center;
+      pointer-events: auto;
     }
 
     .image-large img 
