@@ -40,7 +40,7 @@
     .row {
       display: flex;
       gap: 50px;
-      padding: 80px;
+      padding: 30px;
       align-items: stretch;
       justify-content: space-between;
       margin-bottom: 60px;
