@@ -121,8 +121,9 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       pointer-events: none;
+       pointer-events: auto; 
        z-index: 3;
+       cursor: zoom-in;
     }
     
     .image-large img {
@@ -248,7 +249,14 @@
     .row:nth-child(odd) {
       background-color: #ffffff;
     }
-
+    
+   .row::before,
+    .info-wrapper::before,
+    .info-wrapper::after {
+      pointer-events: none;    
+    }
+   
+    /*Filter Buttons*/
     .filter-buttons {
       display: flex;
       justify-content: center;
