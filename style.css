@@ -127,6 +127,7 @@
 
     /*Image Large - Dakimakura Verticale*/
     .image-large {
+       flex: 0 0 260px;
        height: 30vh;
        aspect-ratio: 5 / 16;
        flex-shrink: 0; /* importantissimo */
@@ -170,6 +171,7 @@
     
     /*Info Wrapper*/
     .info-wrapper {
+      max-width: 420px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
