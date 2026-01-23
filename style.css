@@ -12,7 +12,7 @@
 
     /* Banner */
     .banner {
-      height: 30vh;
+      height: 40vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -132,7 +132,7 @@
     /*Image Large - Dakimakura Verticale*/
     .image-large {
        flex: 0 0 260px;
-       /*height: 30vh;*/
+       height: 35vh;
        aspect-ratio: 5 / 16;
        flex-shrink: 0; /* importantissimo */
        display: flex;
