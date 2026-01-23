@@ -36,7 +36,7 @@
       margin-top: 10px;
     }
 
-    /* Sezioni artworks */
+    /* Row */
     .row {
       display: flex;
       gap: 50px;
@@ -111,8 +111,10 @@
     .row.active {
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
-   
+
+    /*dakimakura Verticale*/
     .image-large {
+       outline: 3px solid red;
        height: 30vh;
        aspect-ratio: 5 / 16;
        flex-shrink: 0; /* importantissimo */
