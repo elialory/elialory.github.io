@@ -38,6 +38,8 @@
 
     /* Row */
     .row {
+      max-width: 1200px;
+      margin: 0 auto 80px;
       display: flex;
       gap: 50px;
       padding: 30px;
