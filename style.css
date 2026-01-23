@@ -359,6 +359,7 @@
    LOADER
 ========================= */
 #loader {
+  font-family: 'Satisfy', cursive;
   position: fixed;
   inset: 0;
   background: white;
