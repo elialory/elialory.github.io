@@ -57,7 +57,7 @@ console.log("SCRIPT JS CARICATO");
           "title": "Princess Yue",
           "nick": "Lunar princess.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
-          "square_image": "Artworks/Yue/square.jpg",
+          "square_image": "Artworks/PlaceHolder/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
           "color": "water",
           "stato": 2,
