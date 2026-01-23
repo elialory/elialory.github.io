@@ -124,7 +124,7 @@
       object-position: center;
     }
 
-    .image-large img {
+    .image-large img 
     .info-wrapper {
       position: relative;
       z-index: 1;
