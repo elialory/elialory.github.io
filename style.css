@@ -111,16 +111,22 @@
     .row.active {
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
-
+   
+    .image-large {
+       height: 30vh;
+       aspect-ratio: 5 / 16;
+       flex-shrink: 0; /* importantissimo */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
     .image-large img {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       border-radius: 8px;
-      height: 30vh;
       width: auto;
       max-width: 100%;
-      flex-shrink: 0;
-      aspect-ratio: 5 / 16;
       object-position: center;
     }
 
