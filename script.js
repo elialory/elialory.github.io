@@ -64,8 +64,8 @@
           "title": "Ty Lee",
           "nick": "Best Girl.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
-          "square_image": "Artworks/TyLee/square.jpg",
-          "vertical_image": "Artworks/TyLee/vertical.jpg",
+          "square_image": "Artworks/PlaceHolder/square.jpg",
+          "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
           "color": "air",
           "stato": 1,
           "category": "Aang"
