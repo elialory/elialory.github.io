@@ -120,7 +120,7 @@
       width: auto;
       max-width: 100%;
       aspect-ratio: 5 / 16;
-      object-position: center;
+      object-position: top center;
     }
 
     .image-large{
