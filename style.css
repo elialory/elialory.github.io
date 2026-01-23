@@ -21,7 +21,8 @@
       background-position: center;
       background-repeat: no-repeat;
       color: white;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      /*text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);*/
+      text-shadow: 1px 1px 2px #550033;
       flex-direction: column;
     }
 
@@ -360,6 +361,7 @@
 ========================= */
 #loader {
   font-family: 'Manga Temple', sans-serif;
+  text-shadow: 1px 1px 2px #550033;
   position: fixed;
   inset: 0;
   background: white;
