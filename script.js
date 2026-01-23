@@ -380,21 +380,21 @@
       });
 
       // Loader
-window.addEventListener("load", () => {
-  const loader = document.getElementById("loader");
-  const content = document.getElementById("site-content");
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        const content = document.getElementById("site-content");
 
-  setTimeout(() => {
-    loader.style.transition = "opacity 0.4s ease";
-    loader.style.opacity = "0";
+         //setTimeout(() => {
+          // loader.style.transition = "opacity 0.4s ease";
+          // loader.style.opacity = "0";
 
-    if(content) content.classList.add("visible"); // mostra il sito
+           //if(content) content.classList.add("visible"); // mostra il sito
 
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 400);
-  }, 1500); // 1,5 secondi di attesa
-});
+          setTimeout(() => {
+            loader.style.display = "none";
+          }, 400);
+        //}, 1500); // 1,5 secondi di attesa
+      });
 
 
 
