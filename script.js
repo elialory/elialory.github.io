@@ -241,7 +241,7 @@
         },
         {
           "title": "Raava",
-          "nick": "The Ravatar",
+          "nick": "The Ravatar. Hah ah got it? No... Caus- nevermind.",
           "description": "hah ah got it? No... Caus- nevermind",
           "square_image": "Artworks/PlaceHolder/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
