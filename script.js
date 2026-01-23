@@ -1,7 +1,3 @@
-
-console.log("SCRIPT JS CARICATO");
-
-
       const data = [
         {
           "title": "Katara",
@@ -383,10 +379,21 @@ console.log("SCRIPT JS CARICATO");
       });
 
       // Loader
-console.log("START DEL LISTENER");
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const loader = document.getElementById("loader");
-  if (loader) loader.style.display = "none";
+
+  if (!loader) return;
+
+  // mostra il loader per 1.5 secondi
+  setTimeout(() => {
+    loader.classList.add("hidden");
+
+    // dopo il fade-out lo rimuoviamo
+    setTimeout(() => {
+      loader.remove();
+    }, 400);
+
+  }, 1500);
 });
 
       // Inizializzazione
