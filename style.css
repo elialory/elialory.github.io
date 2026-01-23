@@ -6,8 +6,8 @@
 
     body {
       font-family: sans-serif;
-      background: #f4f2ef;
-      color: #1c1c1c; 
+      background: #eee9e3;
+      color: #1a1a1a;
     }
 
     /* Banner */
@@ -74,8 +74,8 @@
       opacity: 0.15;
       z-index: 0;
       border-radius: 16px;
-      filter: blur(10px) saturate(130%) brightness(0.9);
-      opacity: 0.25;
+      filter: blur(14px) saturate(140%);
+      opacity: 0.3;
       transform: scale(1.1);
     }
 
@@ -139,7 +139,7 @@
     }
     
     .image-large img {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 1.6s ease;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
       border-radius: 8px;
       width: auto;
@@ -155,7 +155,7 @@
     }
 
     .image-large img:hover {
-      transform: scale(1.1);
+      transform: scale(1.025);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
 
@@ -224,21 +224,21 @@
     /*Testi*/
     .label {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.6rem;
+      font-size: 2.8rem;
       font-weight: 400;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.5px;
     }
 
     .epitet {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 1.1rem;
-      font-weight: 500;
+      font-style: italic;
+      font-size: 0.95rem;
+      opacity: 0.8;
     }
 
     .text {
-      font-family: 'Playfair Display', serif;
-      max-width: 300px;
-      font-size: 0.9rem;
+      font-style: italic;
+      font-size: 0.95rem;
+      opacity: 0.8;
     }
 
     .thumb {
