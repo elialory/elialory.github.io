@@ -32,7 +32,7 @@
     }
 
     .banner p {
-      font-family: 'Kosugi', sans-serif;
+      font-family: 'Manga Temple', sans-serif;
       font-size: 1.2rem;
       margin-top: 10px;
     }
@@ -359,7 +359,7 @@
    LOADER
 ========================= */
 #loader {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Manga Temple', sans-serif;
   position: fixed;
   inset: 0;
   background: white;
