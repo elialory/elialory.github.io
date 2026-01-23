@@ -119,11 +119,12 @@
       height: 30vh;
       width: auto;
       max-width: 100%;
+      flex-shrink: 0;
       aspect-ratio: 5 / 16;
       object-position: center;
     }
 
-    .image-large
+    .image-large img {
     .info-wrapper {
       position: relative;
       z-index: 1;
