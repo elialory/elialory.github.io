@@ -114,7 +114,6 @@
 
     /*Image Large - Dakimakura Verticale*/
     .image-large {
-       outline: 3px solid red;
        height: 30vh;
        aspect-ratio: 5 / 16;
        flex-shrink: 0; /* importantissimo */
