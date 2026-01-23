@@ -114,6 +114,16 @@
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
 
+    .row:nth-child(even) {
+      transform: translateX(10px);
+      background-color: #f9f9f9;
+    }
+
+    .row:nth-child(odd) {
+      background-color: #ffffff;
+    }   
+
+
     /*Image Large - Dakimakura Verticale*/
     .image-large {
        height: 30vh;
@@ -243,14 +253,7 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
 
-    .row:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    .row:nth-child(odd) {
-      background-color: #ffffff;
-    }
-    
+ 
    .row::before,
     .info-wrapper::before,
     .info-wrapper::after {
