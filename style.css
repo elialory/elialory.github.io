@@ -74,6 +74,8 @@
       filter: blur(4px);
       z-index: 0;
       border-radius: 16px;
+      filter: blur(6px) saturate(120%);
+      transform: scale(1.05);
     }
 
     .row:hover {
