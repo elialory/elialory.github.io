@@ -280,7 +280,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Funzione unica di rendering
 function renderArtworks(category = activeCategory) {
+    
+    console.log("Rendering category_before:", category, "sortOrder:", sortOrder);
+    
     activeCategory = category;
+
+    console.log("Rendering category_after:", category, "sortOrder:", sortOrder);
 
     container.innerHTML = "";
 
