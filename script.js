@@ -1,7 +1,7 @@
       const data = [
         {
           "title": "Katara",
-          "nick": "The Water Healer.",
+          "nick": "My mother used to be on a bodypillow...",
           "description": "Gentle yet passionate, Katara uses waterbending for sensual experience. Her caring nature makes you feel desired.",
           "square_image": "Artworks/Katara/square.jpg",
           "vertical_image": "Artworks/Katara/vertical.jpg",
@@ -11,7 +11,7 @@
         },
         {
           "title": "Toph Beifong",
-          "nick": "The Blind Bandit.",
+          "nick": "",
           "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
           "square_image": "Artworks/Toph/square.jpg",
           "vertical_image": "Artworks/Toph/vertical.jpg",
@@ -21,7 +21,7 @@
         },
         {
           "title": "Azula",
-          "nick": "The Blue Flame.",
+          "nick": "Never stick it in crazy.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Azula/square.jpg",
           "vertical_image": "Artworks/Azula/vertical.jpg",
@@ -31,7 +31,7 @@
         },
         {
           "title": "June",
-          "nick": "The Beast Mistress",
+          "nick": "Goth mommy with whip.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/June/square.jpg",
           "vertical_image": "Artworks/June/vertical.jpg",
@@ -41,7 +41,7 @@
         },
         {
           "title": "Suki",
-          "nick": "Kyoshi's warrior.",
+          "nick": "No really. How is Sokka doing it?",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Suki/square.jpg",
           "vertical_image": "Artworks/Suki/vertical.jpg",
@@ -51,7 +51,7 @@
         },
         {
           "title": "Princess Yue",
-          "nick": "Lunar princess.",
+          "nick": "That's rough buddy",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Yue/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
@@ -111,7 +111,7 @@
         },
         {
           "title": "Jin",
-          "nick": "Too good for Zuko.",
+          "nick": "REAL Best Girl",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Jin/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
@@ -121,7 +121,7 @@
         },
         {
           "title": "Korra",
-          "nick": "The Avatar.",
+          "nick": "One of the top ten Tomboys ever made.",
           "description": "Powerful and Passionate, Korra uses bending for an intense experience. Dominant yet craves tenderness. A wild ride of pleasure.",
           "square_image": "Artworks/Korra/square.jpg",
           "vertical_image": "Artworks/Korra/vertical.jpg",
@@ -201,7 +201,7 @@
         },
         {
           "title": "P'Li",
-          "nick": "Her eye is up there.",
+          "nick": "Zaheer has good taste.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Pli/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
@@ -211,7 +211,7 @@
         },
         {
           "title": "Zhu Li Moon",
-          "nick": "She did a thing.",
+          "nick": "She did a thing for you.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/ZhuLi/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
@@ -231,7 +231,7 @@
         },
         {
           "title": "Asami Sato",
-          "nick": "Mistress of the Avatar",
+          "nick": "Korra's owner.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Asami/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
@@ -241,7 +241,7 @@
         },
         {
           "title": "Raava",
-          "nick": "The Ravatar. Hah ah got it? No... Caus- nevermind.",
+          "nick": "I surely shouldn't stick my dick there... however-",
           "description": "hah ah got it? No... Caus- nevermind",
           "square_image": "Artworks/Raava/square.jpg",
           "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
