@@ -11,8 +11,6 @@
     }
 
 /* FILTRI*/
-
-
 .controls {
   display: flex;
   align-items: center;
@@ -31,10 +29,7 @@
   border-radius: 999px;
   border: none;
   cursor: pointer;
-
-  color: #fff;
   font-weight: 600;
-
   backdrop-filter: blur(10px);
   transition: all 0.35s ease;
 }
@@ -105,6 +100,25 @@
     inset 0 0 22px rgba(255,255,255,0.4);
 
   transform: scale(1.08);
+}
+
+/* Pulsanti generici (All / A-Z) */
+.filter-buttons button:not([data-category]) {
+  background: linear-gradient(135deg, #666, #444);
+  color: #fff;
+  box-shadow:
+    0 0 15px rgba(0,0,0,0.35),
+    inset 0 0 8px rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover / attivo generico */
+.filter-buttons button:not([data-category]):hover,
+.filter-buttons button:not([data-category]).active {
+  background: linear-gradient(135deg, #888, #555);
+  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  color: #fff;
+  transform: scale(1.05);
 }
 
 /* hover sexy */
