@@ -10,49 +10,121 @@
       color: #1a1a1a;
     }
 
+/* FILTRI*/
+
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* container filtri */
 .filter-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  position: relative;
 }
 
+/* pulsanti */
 .filter-buttons button {
-  padding: 8px 16px;
+  position: relative;
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.25);
-  background: transparent;
-  color: #fff;
+  border: none;
   cursor: pointer;
-  transition: all 0.25s ease;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+
+  backdrop-filter: blur(8px);
+  transition: all 0.35s ease;
 }
 
+/* hover */
 .filter-buttons button:hover {
-  background: rgba(255,255,255,0.15);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
-.filter-buttons button.active {
-  background: #fff;
-  color: #000;
-  font-weight: 600;
+/* glow anime */
+.filter-buttons button::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    #ff6ec4,
+    #7873f5,
+    #4facfe
+  );
+  opacity: 0;
+  z-index: -1;
+  filter: blur(10px);
+  transition: opacity 0.4s ease;
 }
+
+/* attivo */
+.filter-buttons button.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.filter-buttons button.active::before {
+  opacity: 1;
+}
+
+/* SORT TOGGLE*/
 
 #sort-toggle {
   margin-left: auto;
-  padding: 8px 18px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.25);
-  background: rgba(0,0,0,0.3);
-  color: #fff;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+
+  border-radius: 14px;
+  border: none;
   cursor: pointer;
-  transition: all 0.25s ease;
+
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 110, 196, 0.25),
+    rgba(120, 115, 245, 0.25)
+  );
+
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 0 rgba(255,255,255,0),
+    inset 0 0 20px rgba(255,255,255,0.15);
+
+  transition: all 0.3s ease;
 }
 
 #sort-toggle:hover {
-  background: rgba(255,255,255,0.2);
+  box-shadow:
+    0 0 20px rgba(255, 110, 196, 0.4),
+    inset 0 0 25px rgba(255,255,255,0.25);
 }
 
 #sort-toggle:active {
-  transform: scale(0.96);
+  transform: scale(0.94);
 }
+
+#sort-toggle.pulse {
+  animation: arcanePulse 0.25s ease;
+}
+
+@keyframes arcanePulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
     /* Banner */
     .banner {
       height: 40vh;
