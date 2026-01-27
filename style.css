@@ -360,7 +360,10 @@ section.reveal.visible {
 
     /* Mobile */
     @media(max-width:900px) {
-
+      .banner {
+        width:900px
+      }
+       
       .row,
       .row.reverse {
         flex-direction: column;
