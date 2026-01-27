@@ -531,15 +531,12 @@ section.reveal.visible {
 /*FOOTER*/
 
 .site-footer {
-  margin-top: 80px;
-  padding: 40px 20px;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,0.4),
-    rgba(0,0,0,0)
+    rgba(0,0,0,0.75),   /* più scuro */
+    rgba(0,0,0,0.3)     /* sfumatura verso trasparente */
   );
-  text-align: center;
-  color: rgba(255,255,255,0.7);
+  color: #fff;           /* testo bianco */
 }
 
 .footer-content {
