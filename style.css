@@ -33,13 +33,11 @@
   cursor: pointer;
 
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 
-  background: linear-gradient(
-    135deg,
-    rgba(255, 105, 180, 0.55),
-    rgba(180, 70, 255, 0.55)
-  );
+  backdrop-filter: blur(10px);
+  transition: all 0.35s ease;
+}
 
   backdrop-filter: blur(10px);
   box-shadow:
@@ -49,12 +47,70 @@
   transition: all 0.35s ease;
 }
 
+/*Aang*/
+.filter-buttons button[data-category="Aang"] {
+  color: #3a2a00;
+
+  background: linear-gradient(
+    135deg,
+    #fff4d6,
+    #ffb347
+  );
+
+  box-shadow:
+    0 0 20px rgba(255, 179, 71, 0.6),
+    inset 0 0 12px rgba(255,255,255,0.6);
+}
+
+/* attivo */
+.filter-buttons button[data-category="Aang"].active {
+  background: linear-gradient(
+    135deg,
+    #fff9e6,
+    #ff9800
+  );
+
+  box-shadow:
+    0 0 35px rgba(255, 152, 0, 0.95),
+    inset 0 0 20px rgba(255,255,255,0.8);
+
+  transform: scale(1.08);
+}
+
+/*Korra*/
+.filter-buttons button[data-category="Korra"] {
+  color: #e8f9ff;
+
+  background: linear-gradient(
+    135deg,
+    #2b7fff,
+    #00d4ff
+  );
+
+  box-shadow:
+    0 0 20px rgba(0, 212, 255, 0.6),
+    inset 0 0 12px rgba(255,255,255,0.25);
+}
+
+/* attivo */
+.filter-buttons button[data-category="Korra"].active {
+  background: linear-gradient(
+    135deg,
+    #4facfe,
+    #00f2fe
+  );
+
+  box-shadow:
+    0 0 40px rgba(0, 242, 254, 0.9),
+    inset 0 0 22px rgba(255,255,255,0.4);
+
+  transform: scale(1.08);
+}
+
 /* hover sexy */
 .filter-buttons button:hover {
   transform: translateY(-2px);
-  box-shadow:
-    0 0 25px rgba(255, 105, 180, 0.6),
-    inset 0 0 18px rgba(255,255,255,0.25);
+  filter: brightness(1.1);
 }
 
 /* stato attivo = più horny */
