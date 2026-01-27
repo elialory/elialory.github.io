@@ -10,7 +10,7 @@
           "category": "Aang"
         },
         {
-          "title": "Toph Bei Phong",
+          "title": "Toph Beifong",
           "nick": "The Blind Bandit.",
           "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
           "square_image": "Artworks/Toph/square.jpg",
@@ -35,7 +35,7 @@
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/June/square.jpg",
           "vertical_image": "Artworks/June/vertical.jpg",
-          "color": "fire",
+          "color": "earth",
           "stato": 1,
           "category": "Aang"
         },
@@ -130,7 +130,7 @@
           "category": "Korra",
         },
         {
-          "title": "Opal",
+          "title": "Opal Beifong",
           "nick": "Look... don't treat her bad. She's a good girl.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Opal/square.jpg",
@@ -230,7 +230,7 @@
           "category": "Korra"
         },
         {
-          "title": "Asami",
+          "title": "Asami Sato",
           "nick": "Mistress of the Avatar",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/Asami/square.jpg",
