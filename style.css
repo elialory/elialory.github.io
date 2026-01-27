@@ -443,6 +443,16 @@ section.reveal.visible {
       .image-large img {
         height: 50vh;
       }
+
+      .filter-buttons {
+        gap: 8px;            /* più compatto su mobile */
+      }
+
+      .filter-buttons button {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+      }
+       
     }
 
 
