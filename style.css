@@ -18,6 +18,8 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 30px;
+  justify-content: center;   /* 👈 centro orizzontale */
+  flex-wrap: wrap;           /* mobile safe */
 }
 
 /* container filtri */
@@ -81,7 +83,7 @@
 /* SORT TOGGLE*/
 
 #sort-toggle {
-  margin-left: auto;
+  /*margin-left: auto;*/
   padding: 10px 20px;
   font-size: 0.9rem;
   letter-spacing: 0.1em;
