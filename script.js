@@ -210,7 +210,7 @@
           "category": "Korra"
         },
         {
-          "title": "Zhu Li",
+          "title": "Zhu Li Moon",
           "nick": "She did a thing.",
           "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
           "square_image": "Artworks/ZhuLi/square.jpg",
