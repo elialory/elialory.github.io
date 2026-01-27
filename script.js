@@ -11,7 +11,7 @@
         },
         {
           "title": "Toph Beifong",
-          "nick": "",
+          "nick": "She bends: Earth, Metal, You.",
           "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
           "square_image": "Artworks/Toph/square.jpg",
           "vertical_image": "Artworks/Toph/vertical.jpg",
