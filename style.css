@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 30px;
   margin-bottom: 30px;
   justify-content: center;   /* 👈 centro orizzontale */
   flex-wrap: wrap;           /* mobile safe */
@@ -600,29 +601,81 @@ section.reveal.visible {
   font-style: italic;
 }
 
-/* QR */
-.qr-block {
+/* QR Block - Elemental Style */
+.qr-block-elemental {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  opacity: 0.75;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(255, 180, 80, 0.15), rgba(80, 200, 255, 0.15));
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25), inset 0 0 12px rgba(255,255,255,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0.85;
+  text-align: center;
+  max-width: 220px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  position: relative;
 }
 
-.qr-block img {
-  width: 110px;
+/* Hover glow + pulse */
+.qr-block-elemental:hover {
+  transform: scale(1.07);
+  box-shadow:
+    0 0 35px rgba(255,180,80,0.7),
+    0 0 45px rgba(80,200,255,0.7),
+    inset 0 0 20px rgba(255,255,255,0.2);
+  opacity: 1;
+}
+
+/* QR Frame with animated glow rings */
+.qr-frame {
+  position: relative;
+  border-radius: 16px;
+  padding: 6px;
+  background: linear-gradient(135deg, #fbbf24, #3b82f6);
+  box-shadow: 0 0 20px rgba(255, 191, 36, 0.7), 0 0 25px rgba(59, 130, 246, 0.7);
+  animation: qrPulse 2s infinite alternate;
+}
+
+/* Animated rings */
+.qr-frame::after {
+  content: '';
+  position: absolute;
+  top: -8px; left: -8px; right: -8px; bottom: -8px;
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+  pointer-events: none;
+  animation: qrRing 2s infinite alternate;
+}
+
+@keyframes qrPulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+@keyframes qrRing {
+  0% { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(1.1); opacity: 1; }
+}
+
+.qr-block-elemental img {
+  width: 120px;
   height: auto;
   border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.3);
 }
 
-.qr-block span {
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-}
-
-.qr-block:hover {
-  opacity: 1;
-  transform: scale(1.05);
+.qr-block-elemental span {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+  font-family: 'Manga Temple', sans-serif;
 }
 
