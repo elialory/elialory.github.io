@@ -537,6 +537,8 @@ section.reveal.visible {
     rgba(0,0,0,0.3)     /* sfumatura verso trasparente */
   );
   color: #fff;           /* testo bianco */
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .footer-content {
