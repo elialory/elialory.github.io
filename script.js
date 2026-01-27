@@ -365,9 +365,19 @@ function closeLightbox() {
 lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => { if(e.target===lightbox) closeLightbox(); });
 
+// Disabilita click destro sul lightbox
+lightbox.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
+
 function attachLightboxListeners() {
     document.querySelectorAll('.image-large img').forEach(img => {
         img.style.cursor = 'pointer';
+
+        // 1️⃣ Disabilita trascinamento
+        img.setAttribute('draggable', 'false');
+
+        // 2️⃣ Click sull'immagine apre lightbox
         img.addEventListener('click', () => openLightbox(img.src, img.alt));
     });
 }
