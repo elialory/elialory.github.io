@@ -34,14 +34,6 @@
   transition: all 0.35s ease;
 }
 
-  backdrop-filter: blur(10px);
-  box-shadow:
-    0 0 15px rgba(255, 105, 180, 0.35),
-    inset 0 0 12px rgba(255,255,255,0.15);
-
-  transition: all 0.35s ease;
-}
-
 /*Aang*/
 .filter-buttons button[data-category="Aang"] {
   color: #3b2400;
