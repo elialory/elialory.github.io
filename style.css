@@ -10,6 +10,49 @@
       color: #1a1a1a;
     }
 
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-buttons button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.filter-buttons button.active {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+}
+
+#sort-toggle {
+  margin-left: auto;
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#sort-toggle:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+#sort-toggle:active {
+  transform: scale(0.96);
+}
     /* Banner */
     .banner {
       height: 40vh;
