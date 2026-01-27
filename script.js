@@ -265,6 +265,18 @@ const sortBtn = document.getElementById("sort-toggle");
 const filterButtons = document.querySelectorAll('.filter-buttons button');
 const container = document.getElementById('artworks-container');
 
+document.addEventListener("DOMContentLoaded", () => {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        setTimeout(() => {
+            loader.classList.add("hidden");
+            setTimeout(() => loader.remove(), 800);
+        }, 1500);
+    }
+
+    // Render iniziale dopo loader
+    renderArtworks();
+});
 
 // Funzione unica di rendering
 function renderArtworks(category = activeCategory) {
@@ -361,4 +373,4 @@ function attachLightboxListeners() {
 }
 
 // --- Avvio iniziale ---
-renderArtworks();
+//renderArtworks();
