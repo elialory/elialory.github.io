@@ -21,121 +21,72 @@
   flex-wrap: wrap;           /* mobile safe */
 }
 
-/* container filtri */
+/* Pulsanti generali */
 .filter-buttons button {
-  position: relative;
   padding: 10px 22px;
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
-  border-radius: 12px;
-  border: none;
+  font-size: 1rem;
+  border-radius: 14px; /* meno tondo */
   font-family: 'Poppins', 'Roboto', sans-serif; /* elegante e leggibile */
   font-weight: 600;
   letter-spacing: 0.05em;
+  border: none;
   cursor: pointer;
-  backdrop-filter: blur(10px);
+  color: #fff;
+  backdrop-filter: blur(8px);
   transition: all 0.35s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/*Aang*/
+/* Hover generico */
+.filter-buttons button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Stato attivo */
+.filter-buttons button.active {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255,255,255,0.35);
+}
+
+/* Aang */
 .filter-buttons button[data-category="Aang"] {
-  color: #3b2400;
-
-  background: linear-gradient(
-    135deg,
-    #f59e0b,
-    #d97706
-  );
-
-  box-shadow:
-    0 0 18px rgba(217, 119, 6, 0.6),
-    inset 0 0 10px rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
 }
 
-/* attivo */
+/* Aang attivo */
 .filter-buttons button[data-category="Aang"].active {
-  background: linear-gradient(
-    135deg,
-    #fbbf24,
-    #d97706
-  );
-
-  box-shadow:
-    0 0 32px rgba(245, 158, 11, 0.85),
-    inset 0 0 18px rgba(255, 255, 255, 0.25);
-
-  transform: scale(1.07);
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  box-shadow: 0 0 32px rgba(245, 158, 11, 0.85);
 }
 
-/*Korra*/
+/* Korra */
 .filter-buttons button[data-category="Korra"] {
-  color: #e8f9ff;
-
-  background: linear-gradient(
-    135deg,
-    #2b7fff,
-    #00d4ff
-  );
-
-  box-shadow:
-    0 0 20px rgba(0, 212, 255, 0.6),
-    inset 0 0 12px rgba(255,255,255,0.25);
+  background: linear-gradient(135deg, #2b7fff, #00d4ff);
+  color: #fff;
 }
 
-/* attivo */
+/* Korra attivo */
 .filter-buttons button[data-category="Korra"].active {
-  background: linear-gradient(
-    135deg,
-    #4facfe,
-    #00f2fe
-  );
-
-  box-shadow:
-    0 0 40px rgba(0, 242, 254, 0.9),
-    inset 0 0 22px rgba(255,255,255,0.4);
-
-  transform: scale(1.08);
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  box-shadow: 0 0 40px rgba(0, 242, 254, 0.9);
 }
 
-/* Pulsanti generici (All / A-Z) */
+/* Pulsanti senza categoria (All, A-Z) */
 .filter-buttons button:not([data-category]) {
   background: linear-gradient(135deg, #666, #444);
   color: #fff;
-  box-shadow:
-    0 0 15px rgba(0,0,0,0.35),
-    inset 0 0 8px rgba(255,255,255,0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.35);
 }
 
-/* Hover / attivo generico */
 .filter-buttons button:not([data-category]):hover,
 .filter-buttons button:not([data-category]).active {
   background: linear-gradient(135deg, #888, #555);
   box-shadow: 0 0 25px rgba(0,0,0,0.5);
-  color: #fff;
-  transform: scale(1.05);
 }
 
-/* hover sexy */
-.filter-buttons button:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.1);
-}
-
-/* stato attivo = più horny */
-.filter-buttons button.active {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 80, 200, 0.85),
-    rgba(130, 60, 255, 0.85)
-  );
-
-  box-shadow:
-    0 0 35px rgba(255, 80, 200, 0.9),
-    inset 0 0 25px rgba(255,255,255,0.35);
-
-  transform: translateY(-1px) scale(1.05);
-}
 /* SORT TOGGLE*/
 
 #sort-toggle {
