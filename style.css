@@ -49,32 +49,32 @@
 
 /*Aang*/
 .filter-buttons button[data-category="Aang"] {
-  color: #3a2a00;
+  color: #3b2400;
 
   background: linear-gradient(
     135deg,
-    #fff4d6,
-    #ffb347
+    #f59e0b,
+    #d97706
   );
 
   box-shadow:
-    0 0 20px rgba(255, 179, 71, 0.6),
-    inset 0 0 12px rgba(255,255,255,0.6);
+    0 0 18px rgba(217, 119, 6, 0.6),
+    inset 0 0 10px rgba(255, 255, 255, 0.15);
 }
 
 /* attivo */
 .filter-buttons button[data-category="Aang"].active {
   background: linear-gradient(
     135deg,
-    #fff9e6,
-    #ff9800
+    #fbbf24,
+    #d97706
   );
 
   box-shadow:
-    0 0 35px rgba(255, 152, 0, 0.95),
-    inset 0 0 20px rgba(255,255,255,0.8);
+    0 0 32px rgba(245, 158, 11, 0.85),
+    inset 0 0 18px rgba(255, 255, 255, 0.25);
 
-  transform: scale(1.08);
+  transform: scale(1.07);
 }
 
 /*Korra*/
