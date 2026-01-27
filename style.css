@@ -17,7 +17,8 @@
       align-items: center;
       justify-content: center;
       background-image: url("General_pics/Banner_image.jpg");
-      background-size: cover;
+      /*background-size: cover;*/
+      background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       color: white;
