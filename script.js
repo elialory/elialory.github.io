@@ -272,6 +272,12 @@
           if (filterCategory !== "All" && artwork.category !== filterCategory) return;
 
           const rowClass = visibleIndex % 2 === 0 ? 'row' : 'row reverse';
+          //Test ->
+          const isReversed = visibleIndex % 2 !== 0;
+          const revealClass = isReversed ? 'reveal right' : 'reveal left';
+
+          section.className = `${rowClass} ${revealClass}`;
+          //Test <-
 
           const section = document.createElement('section');
 
@@ -281,7 +287,7 @@
           ${baseColor}
         `;
 
-          section.className = rowClass;
+          //section.className = rowClass;
           section.innerHTML = `
           <div class="image-large">
             <img src="${artwork.vertical_image}" alt="${artwork.title}">
