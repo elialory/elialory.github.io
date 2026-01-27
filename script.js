@@ -258,169 +258,64 @@ const elementColors = {
     earth: "#005A00"
 };
 
+let sortOrder = "asc";       // A-Z o Z-A
+let activeCategory = "All";  // Categoria attiva
+
+const sortBtn = document.getElementById("sort-toggle");
+const filterButtons = document.querySelectorAll('.filter-buttons button');
 const container = document.getElementById('artworks-container');
 
-function renderArtworks(filterCategory = "All") {
 
-    container.innerHTML = ""; // svuota prima di ridisegnare
+// Funzione unica di rendering
+function renderArtworks(category = activeCategory) {
+    activeCategory = category;
 
-    let visibleIndex = 0; // per alternanza layout
+    container.innerHTML = "";
 
-    let artworksToRender = [...data];
+    let visibleIndex = 0;
 
+    // Filtro
+    let artworksToRender = data.filter(a => category === "All" || a.category === category);
+
+    // Ordine
     artworksToRender.sort((a, b) => {
-        // 1️⃣ stato sempre prioritario
-        if (a.stato !== b.stato) {
-            return a.stato - b.stato;
-        }
-
-        // 2️⃣ titolo con direzione variabile
+        if (a.stato !== b.stato) return a.stato - b.stato;
         const titleCompare = a.title.localeCompare(b.title);
         return sortOrder === "asc" ? titleCompare : -titleCompare;
     });
 
-    artworksToRender.forEach((artwork) => {
-
-        if (filterCategory !== "All" && artwork.category !== filterCategory) return;
-
+    artworksToRender.forEach(artwork => {
         const rowClass = visibleIndex % 2 === 0 ? 'row' : 'row reverse';
-        //Test ->
-        const isReversed = visibleIndex % 2 !== 0;
-        const revealClass = isReversed ? 'reveal right' : 'reveal left';
-        //Test <-
+        const revealClass = visibleIndex % 2 !== 0 ? 'reveal right' : 'reveal left';
 
         const section = document.createElement('section');
-
         const baseColor = elementColors[artwork.color] || "#ffffff";
+
         section.style.background = `
-          linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.1)),
-          ${baseColor}
+            linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.1)),
+            ${baseColor}
         `;
 
         section.className = `${rowClass} ${revealClass}`;
-        //section.className = rowClass;
         section.innerHTML = `
-          <div class="image-large">
-            <img src="${artwork.vertical_image}" alt="${artwork.title}">
-          </div>
-          <div class="info-wrapper">
-            <div class="info">
-              <p class="label">${artwork.title}</p>
-              <p class="epitet">${artwork.nick}</p>
+            <div class="image-large">
+                <img src="${artwork.vertical_image}" alt="${artwork.title}">
             </div>
-          </div>
+            <div class="info-wrapper">
+                <div class="info">
+                    <p class="label">${artwork.title}</p>
+                    <p class="epitet">${artwork.nick}</p>
+                </div>
+            </div>
         `;
-
-
-        // <p class="text">${artwork.description}</p>
-
+        section.style.setProperty("--bg-img", `url(${artwork.square_image})`);
         container.appendChild(section);
 
-        //const infoWrapper = section.querySelector('.info-wrapper');
-        //infoWrapper.style.setProperty('--bg-img', `url(${artwork.square_image})`);
-
-        section.style.setProperty("--bg-img", `url(${artwork.square_image})`);
-
-        // animazione con delay leggero per ogni riga
-        setTimeout(() => {
-            section.classList.add('visible');
-        }, visibleIndex * 100); // 100ms tra le righe
+        setTimeout(() => section.classList.add('visible'), visibleIndex * 100);
         visibleIndex++;
-
-        section.classList.add("active");
     });
 
     attachLightboxListeners();
-}
-
-// Seleziona tutti
-document.querySelectorAll('.filter-buttons button').forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelectorAll('.filter-buttons button').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const category = btn.getAttribute('data-category');
-        renderArtworks(category);
-    });
-});
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// Lightbox
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-const lightboxClose = document.getElementById('lightbox-close');
-
-// Funzione per aprire lightbox
-function openLightbox(src, alt) {
-    lightboxImg.src = src;
-    lightboxImg.alt = alt;
-    lightbox.style.display = 'flex';
-}
-
-// Funzione per chiudere
-function closeLightbox() {
-    lightbox.style.display = 'none';
-    lightboxImg.src = '';
-}
-
-// Ascolta click sul close
-lightboxClose.addEventListener('click', closeLightbox);
-
-// Chiude cliccando sullo sfondo
-lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeLightbox();
-});
-
-// Aggiungi listener alle immagini verticali dopo il render
-function attachLightboxListeners() {
-    document.querySelectorAll('.image-large img').forEach(img => {
-        img.style.cursor = 'pointer'; // indica che si può cliccare
-        img.addEventListener('click', () => {
-            openLightbox(img.src, img.alt);
-        });
-    });
-}
-
-// Dopo ogni renderArtworks(), chiama attachLightboxListeners()
-renderArtworks(); // iniziale
-attachLightboxListeners();
-
-// Aggiorna listeners quando si filtra
-// Stato globale
-let sortOrder = "asc";          // A-Z o Z-A
-let activeCategory = "All";     // Categoria attiva
-
-// Selettori
-const filterButtons = document.querySelectorAll('.filter-buttons button');
-const sortBtn = document.getElementById("sort-toggle");
-
-// Funzione di rendering aggiornata
-function renderArtworks(category) {
-    // Aggiorna categoria attiva
-    activeCategory = category;
-
-    // Prendi tutti gli artworks
-    let artworks = Array.from(document.querySelectorAll('.artwork'));
-
-    // Filtra per categoria
-    if (category !== "All") {
-        artworks = artworks.filter(a => a.dataset.category === category);
-    }
-
-    // Ordina alfabeticamente per titolo
-    artworks.sort((a, b) => {
-        const titleA = a.dataset.title.toLowerCase();
-        const titleB = b.dataset.title.toLowerCase();
-        if (titleA < titleB) return sortOrder === "asc" ? -1 : 1;
-        if (titleA > titleB) return sortOrder === "asc" ? 1 : -1;
-        return 0;
-    });
-
-    // Rimuovi artworks attuali dal DOM
-    const container = document.querySelector('.artworks-container');
-    container.innerHTML = '';
-
-    // Aggiungi artworks filtrati e ordinati
-    artworks.forEach(a => container.appendChild(a));
 }
 
 // --- Listener filtri ---
@@ -432,48 +327,38 @@ filterButtons.forEach(btn => {
     });
 });
 
-// --- Listener toggle ordinamento ---
+// --- Listener toggle ordine ---
 sortBtn.addEventListener('click', () => {
-    // Cambia stato
     sortOrder = sortOrder === "asc" ? "desc" : "asc";
     sortBtn.textContent = sortOrder === "asc" ? "A–Z" : "Z–A";
-
-    // Render con categoria attiva
     renderArtworks(activeCategory);
 });
 
+// --- Lightbox ---
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.getElementById('lightbox-close');
 
+function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.style.display = 'flex';
+}
 
-attachLightboxListeners(); // aggiorna listener per le nuove immagini filtrate
+function closeLightbox() {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => { if(e.target===lightbox) closeLightbox(); });
 
-/*data.sort((a, b) => {
-  // Prima confronto numerico per 'stato'
-  if (a.stato !== b.stato) {
-    return a.stato - b.stato; // 1 prima di 2
-  }
-  // Poi confronto alfabetico per 'title'
-  return a.title.localeCompare(b.title);
-});*/
+function attachLightboxListeners() {
+    document.querySelectorAll('.image-large img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+    });
+}
 
-// Loader
-document.addEventListener("DOMContentLoaded", () => {
-    const loader = document.getElementById("loader");
-
-    if (!loader) return;
-
-    // mostra il loader per 1.5 secondi
-    setTimeout(() => {
-        loader.classList.add("hidden");
-
-        // dopo il fade-out lo rimuoviamo
-        setTimeout(() => {
-            loader.remove();
-        }, 800);
-
-    }, 1500);
-});
-
-// Inizializzazione
+// --- Avvio iniziale ---
 renderArtworks();
