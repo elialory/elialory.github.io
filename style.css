@@ -144,7 +144,7 @@
       background-image: url("General_pics/Banner_image.jpg");
       background-size: cover;
       /*background-size: contain;*/
-      background-position: top;
+      background-position: 50% 20%; /* 50% orizzontale, 20% verticale */
       background-repeat: no-repeat;
       color: white;
       /*text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);*/
