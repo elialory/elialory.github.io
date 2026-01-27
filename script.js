@@ -314,6 +314,7 @@ function renderArtworks(category = activeCategory) {
         `;
 
         section.className = `${rowClass} ${revealClass}`;
+        
         section.innerHTML = `
             <div class="image-large">
                 <img src="${artwork.vertical_image}" alt="${artwork.title}">
@@ -325,6 +326,7 @@ function renderArtworks(category = activeCategory) {
                 </div>
             </div>
         `;
+        
         section.style.setProperty("--bg-img", `url(${artwork.square_image})`);
         container.appendChild(section);
 
@@ -343,7 +345,10 @@ filterButtons.forEach(btn => {
         btn.classList.add('active');
 
         // Aggiorna categoria attiva e render
-        activeCategory = btn.dataset.category;
+        if (btn.dataset.category !== undefined) {
+            activeCategory = btn.dataset.category;
+        }
+        
         renderArtworks(activeCategory);
 
         // Aggiorna bottone sort per riflettere stato corrente
