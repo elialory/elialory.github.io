@@ -354,8 +354,15 @@ filterButtons.forEach(btn => {
 
 // --- Listener toggle ordine ---
 sortBtn.addEventListener('click', () => {
+    // cambia ordine
     sortOrder = sortOrder === "asc" ? "desc" : "asc";
     sortBtn.textContent = sortOrder === "asc" ? "A–Z" : "Z–A";
+
+    // micro animazione anime ✨
+    sortBtn.classList.add('pulse');
+    setTimeout(() => sortBtn.classList.remove('pulse'), 250);
+
+    // re-render
     renderArtworks(activeCategory);
 });
 
