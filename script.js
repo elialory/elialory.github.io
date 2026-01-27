@@ -275,8 +275,6 @@
           //Test ->
           const isReversed = visibleIndex % 2 !== 0;
           const revealClass = isReversed ? 'reveal right' : 'reveal left';
-
-          section.className = `${rowClass} ${revealClass}`;
           //Test <-
 
           const section = document.createElement('section');
@@ -287,6 +285,7 @@
           ${baseColor}
         `;
 
+          section.className = `${rowClass} ${revealClass}`;
           //section.className = rowClass;
           section.innerHTML = `
           <div class="image-large">
