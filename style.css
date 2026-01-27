@@ -76,15 +76,19 @@
 
 /* Pulsanti senza categoria (All, A-Z) */
 .filter-buttons button:not([data-category]) {
-  background: linear-gradient(135deg, #555, #444);
+  background: linear-gradient(135deg, #333, #111);  /* più scuro */
   color: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,0.35);
+  box-shadow:
+    0 0 20px rgba(0,0,0,0.6),
+    inset 0 0 10px rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
 }
 
 .filter-buttons button:not([data-category]):hover,
 .filter-buttons button:not([data-category]).active {
-  background: linear-gradient(135deg, #444, #333);
-  box-shadow: 0 0 25px rgba(0,0,0,0.5);
+  background: linear-gradient(135deg, #555, #222);
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  transform: scale(1.05);
 }
 
 /* SORT TOGGLE*/
