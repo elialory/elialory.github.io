@@ -477,4 +477,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
       // Inizializzazione
-     // renderArtworks();
+      renderArtworks();
