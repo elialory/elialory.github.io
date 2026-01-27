@@ -258,8 +258,6 @@
         earth: "#005A00"
       };
 
-      let sortOrder = "asc"; // asc | desc
-
       const container = document.getElementById('artworks-container');
 
       function renderArtworks(filterCategory = "All") {
@@ -387,24 +385,62 @@ artworksToRender.forEach((artwork) => {
       attachLightboxListeners();
 
       // Aggiorna listeners quando si filtra
-      document.querySelectorAll('.filter-buttons button').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.filter-buttons button').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          const category = btn.getAttribute('data-category');
-          renderArtworks(category);
-	    
-	    const sortBtn = document.getElementById("sort-toggle");
+// Stato globale
+let sortOrder = "asc";          // A-Z o Z-A
+let activeCategory = "All";     // Categoria attiva
 
-          sortBtn.addEventListener("click", () => {
-          sortOrder = sortOrder === "asc" ? "desc" : "asc";
-          sortBtn.textContent = sortOrder === "asc" ? "A–Z" : "Z–A";
+// Selettori
+const filterButtons = document.querySelectorAll('.filter-buttons button');
+const sortBtn = document.getElementById("sort-toggle");
 
-          const activeFilter = document.querySelector('.filter-buttons button.active');
-          const category = activeFilter ? activeFilter.dataset.category : "All";
+// Funzione di rendering aggiornata
+function renderArtworks(category) {
+  // Aggiorna categoria attiva
+  activeCategory = category;
 
-          renderArtworks(category);
-         });        
+  // Prendi tutti gli artworks
+  let artworks = Array.from(document.querySelectorAll('.artwork'));
+
+  // Filtra per categoria
+  if (category !== "All") {
+    artworks = artworks.filter(a => a.dataset.category === category);
+  }
+
+  // Ordina alfabeticamente per titolo
+  artworks.sort((a, b) => {
+    const titleA = a.dataset.title.toLowerCase();
+    const titleB = b.dataset.title.toLowerCase();
+    if (titleA < titleB) return sortOrder === "asc" ? -1 : 1;
+    if (titleA > titleB) return sortOrder === "asc" ? 1 : -1;
+    return 0;
+  });
+
+  // Rimuovi artworks attuali dal DOM
+  const container = document.querySelector('.artworks-container');
+  container.innerHTML = '';
+
+  // Aggiungi artworks filtrati e ordinati
+  artworks.forEach(a => container.appendChild(a));
+}
+
+// --- Listener filtri ---
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderArtworks(btn.dataset.category);
+  });
+});
+
+// --- Listener toggle ordinamento ---
+sortBtn.addEventListener('click', () => {
+  // Cambia stato
+  sortOrder = sortOrder === "asc" ? "desc" : "asc";
+  sortBtn.textContent = sortOrder === "asc" ? "A–Z" : "Z–A";
+
+  // Render con categoria attiva
+  renderArtworks(activeCategory);
+});
 
 
 		  
