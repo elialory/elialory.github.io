@@ -145,7 +145,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url("General_pics/Banner_image.jpg");
+      background-image: url("General_pics/banner.png");
       background-size: cover;
       /*background-size: contain;*/
       background-position: 50% 20%; /* 50% orizzontale, 20% verticale */
