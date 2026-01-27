@@ -333,9 +333,16 @@ function renderArtworks(category = activeCategory) {
 // --- Listener filtri ---
 filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
+        // Aggiorna classe active
         filterButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        renderArtworks(btn.dataset.category);
+
+        // Aggiorna categoria attiva e render
+        activeCategory = btn.dataset.category;
+        renderArtworks(activeCategory);
+
+        // Aggiorna bottone sort per riflettere stato corrente
+        sortBtn.textContent = sortOrder === "asc" ? "A–Z" : "Z–A";
     });
 });
 
