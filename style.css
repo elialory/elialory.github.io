@@ -137,7 +137,7 @@
     }
 
 
-    /*Image Large - Dakimakura Verticale*/
+    /*Image Large - Contenitore Dakimakura Verticale*/
     .image-large {
        flex: 0 0 260px;
        height: 35vh;
@@ -150,7 +150,21 @@
        z-index: 3;
        cursor: zoom-in;
     }
-    
+
+    .image-large.reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition:
+      opacity 0.9s ease,
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .image-large.reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /*Image Large - immagine Dakimakura Verticale*/
     .image-large img {
       height: 100%;
       object-fit: contain;   /* ← chiave */
@@ -174,6 +188,15 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     }
 
+    .card:hover .info {
+      transform: translateY(-6px);
+    }
+
+    .card:hover img {
+      filter: contrast(1.05) saturate(1.1);
+    }
+
+    /*Loading*/
     .loading {
       display: flex;
       align-items: center;
