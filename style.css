@@ -136,6 +136,27 @@
       pointer-events: none;    
     }
 
+    /*Section*/
+section.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+section.reveal.left {
+  transform: translateX(-60px);
+}
+
+section.reveal.right {
+  transform: translateX(60px);
+}
+
+section.reveal.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 
     /*Image Large - Contenitore Dakimakura Verticale*/
     .image-large {
