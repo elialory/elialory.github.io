@@ -258,6 +258,7 @@
         earth: "#005A00"
       };
 
+      let sortOrder = "asc"; // asc | desc
 
       const container = document.getElementById('artworks-container');
 
@@ -267,7 +268,20 @@
 
         let visibleIndex = 0; // per alternanza layout
 
-        data.forEach((artwork) => {
+let artworksToRender = [...data];
+
+artworksToRender.sort((a, b) => {
+  // 1️⃣ stato sempre prioritario
+  if (a.stato !== b.stato) {
+    return a.stato - b.stato;
+  }
+
+  // 2️⃣ titolo con direzione variabile
+  const titleCompare = a.title.localeCompare(b.title);
+  return sortOrder === "asc" ? titleCompare : -titleCompare;
+});
+
+artworksToRender.forEach((artwork) => {
 
           if (filterCategory !== "All" && artwork.category !== filterCategory) return;
 
@@ -379,19 +393,34 @@
           btn.classList.add('active');
           const category = btn.getAttribute('data-category');
           renderArtworks(category);
+	    
+	    const sortBtn = document.getElementById("sort-toggle");
+
+          sortBtn.addEventListener("click", () => {
+          sortOrder = sortOrder === "asc" ? "desc" : "asc";
+          sortBtn.textContent = sortOrder === "asc" ? "A–Z" : "Z–A";
+
+          const activeFilter = document.querySelector('.filter-buttons button.active');
+          const category = activeFilter ? activeFilter.dataset.category : "All";
+
+          renderArtworks(category);
+         });        
+
+
+		  
           attachLightboxListeners(); // aggiorna listener per le nuove immagini filtrate
         });
       });
       ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-      data.sort((a, b) => {
+      /*data.sort((a, b) => {
         // Prima confronto numerico per 'stato'
         if (a.stato !== b.stato) {
           return a.stato - b.stato; // 1 prima di 2
         }
         // Poi confronto alfabetico per 'title'
         return a.title.localeCompare(b.title);
-      });
+      });*/
 
       // Loader
 document.addEventListener("DOMContentLoaded", () => {
@@ -412,4 +441,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
       // Inizializzazione
-      renderArtworks();
+     // renderArtworks();
