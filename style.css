@@ -21,75 +21,43 @@
   flex-wrap: wrap;           /* mobile safe */
 }
 
-/* Pulsanti generali */
+/* Pulsanti filtri uniformi */
 .filter-buttons button {
   padding: 10px 22px;
-  font-size: 1rem;
-  border-radius: 14px; /* meno tondo */
-  font-family: 'Poppins', 'Roboto', sans-serif; /* elegante e leggibile */
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  border-radius: 12px;          /* meno tondo */
   border: none;
   cursor: pointer;
-  color: #fff;
-  backdrop-filter: blur(8px);
-  transition: all 0.35s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
 
-/* Hover generico */
-.filter-buttons button:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.1);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-}
-
-/* Stato attivo */
-.filter-buttons button.active {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(255,255,255,0.35);
-}
-
-/* Aang */
-.filter-buttons button[data-category="Aang"] {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-  color: #fff;
-}
-
-/* Aang attivo */
-.filter-buttons button[data-category="Aang"].active {
-  background: linear-gradient(135deg, #fbbf24, #d97706);
-  box-shadow: 0 0 32px rgba(245, 158, 11, 0.85);
-}
-
-/* Korra */
-.filter-buttons button[data-category="Korra"] {
-  background: linear-gradient(135deg, #2b7fff, #00d4ff);
-  color: #fff;
-}
-
-/* Korra attivo */
-.filter-buttons button[data-category="Korra"].active {
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  box-shadow: 0 0 40px rgba(0, 242, 254, 0.9);
-}
-
-/* Pulsanti senza categoria (All, A-Z) */
-.filter-buttons button:not([data-category]) {
-  background: linear-gradient(135deg, #333, #111);  /* più scuro */
-  color: #fff;
+  background-color: #555;       /* colore neutro uniforme */
+  color: #fff;                  /* testo leggibile */
   box-shadow:
-    0 0 20px rgba(0,0,0,0.6),
+    0 0 15px rgba(0,0,0,0.4),
     inset 0 0 10px rgba(255,255,255,0.1);
+
   transition: all 0.3s ease;
 }
 
-.filter-buttons button:not([data-category]):hover,
-.filter-buttons button:not([data-category]).active {
-  background: linear-gradient(135deg, #555, #222);
-  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+/* Hover */
+.filter-buttons button:hover {
+  background-color: #666;
   transform: scale(1.05);
+  box-shadow:
+    0 0 25px rgba(0,0,0,0.5),
+    inset 0 0 12px rgba(255,255,255,0.15);
 }
+
+/* Pulsante attivo */
+.filter-buttons button.active {
+  background-color: #777;       /* leggermente più chiaro per indicare attivo */
+  box-shadow:
+    0 0 30px rgba(0,0,0,0.6),
+    inset 0 0 15px rgba(255,255,255,0.2);
+  transform: scale(1.07);
+}
+
 
 /* SORT TOGGLE*/
 
