@@ -241,7 +241,7 @@ const data = [
     },
     {
         "title": "Raava",
-        "nick": "I surely shouldn't stick my dick there... however-",
+        "nick": "I really shouldn't stick my dick in there... however-",
         "description": "hah ah got it? No... Caus- nevermind",
         "square_image": "Artworks/Raava/square.jpg",
         "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
