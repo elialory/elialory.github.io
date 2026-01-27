@@ -23,13 +23,6 @@
 }
 
 /* container filtri */
-.filter-buttons {
-  display: flex;
-  gap: 12px;
-  position: relative;
-}
-
-/* pulsanti */
 .filter-buttons button {
   position: relative;
   padding: 10px 22px;
@@ -39,47 +32,45 @@
   border: none;
   cursor: pointer;
 
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
+  font-weight: 500;
 
-  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 105, 180, 0.55),
+    rgba(180, 70, 255, 0.55)
+  );
+
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 15px rgba(255, 105, 180, 0.35),
+    inset 0 0 12px rgba(255,255,255,0.15);
+
   transition: all 0.35s ease;
 }
 
-/* hover */
+/* hover sexy */
 .filter-buttons button:hover {
-  color: #fff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 25px rgba(255, 105, 180, 0.6),
+    inset 0 0 18px rgba(255,255,255,0.25);
 }
 
-/* glow anime */
-.filter-buttons button::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: inherit;
-  background: linear-gradient(
-    120deg,
-    #ff6ec4,
-    #7873f5,
-    #4facfe
-  );
-  opacity: 0;
-  z-index: -1;
-  filter: blur(10px);
-  transition: opacity 0.4s ease;
-}
-
-/* attivo */
+/* stato attivo = più horny */
 .filter-buttons button.active {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.15);
-}
+  background: linear-gradient(
+    135deg,
+    rgba(255, 80, 200, 0.85),
+    rgba(130, 60, 255, 0.85)
+  );
 
-.filter-buttons button.active::before {
-  opacity: 1;
-}
+  box-shadow:
+    0 0 35px rgba(255, 80, 200, 0.9),
+    inset 0 0 25px rgba(255,255,255,0.35);
 
+  transform: translateY(-1px) scale(1.05);
+}
 /* SORT TOGGLE*/
 
 #sort-toggle {
