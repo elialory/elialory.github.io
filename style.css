@@ -22,6 +22,18 @@ body {
 }
 
 /*--------------------------------------------------------*/
+/*LOADING*/
+/*--------------------------------------------------------*/
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*--------------------------------------------------------*/
 /*CONTROL*/
 /*--------------------------------------------------------*/
 .controls {
@@ -165,7 +177,7 @@ body {
 	background-image: var(--bg-img);
 	background-size: cover;
 	background-position: center;
-	opacity: 0.15;
+	opacity: 1;
 	z-index: 0;
 	border-radius: 16px;
 	filter: blur(14px) saturate(140%);
@@ -229,7 +241,7 @@ body {
 /*--------------------------------------------------------*/
 /*SECTION*/
 /*--------------------------------------------------------*/
-section.reveal {
+/*section.reveal {
 	opacity: 0;
 	transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 	will-change: opacity, transform;
@@ -246,7 +258,7 @@ section.reveal.right {
 section.reveal.visible {
 	opacity: 1;
 	transform: translateX(0);
-}
+}*/
 
 /*--------------------------------------------------------*/
 /*IMAGE-LARGE*/
@@ -301,29 +313,6 @@ section.reveal.visible {
 }
 
 /*--------------------------------------------------------*/
-/*CARD*/
-/*--------------------------------------------------------*/
-.card:hover .info {
-	transform: translateY(-6px);
-}
-
-.card:hover img {
-	filter: contrast(1.05) saturate(1.1);
-}
-
-/*--------------------------------------------------------*/
-/*LOADING*/
-/*--------------------------------------------------------*/
-.loading {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	flex-direction: column;
-	justify-content: center;
-}
-
-/*--------------------------------------------------------*/
 /*INFO-WRAPPER*/
 /*--------------------------------------------------------*/
 .info-wrapper {
@@ -331,8 +320,6 @@ section.reveal.visible {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	/*height: 100%;*/
-	/*min-height: 100%;*/
 	width: 100%;
 	flex-direction: column;
 	justify-content: center;
