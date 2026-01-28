@@ -194,7 +194,7 @@ body {
 	}
 }
 
-/*.row::after {
+.row::after {
 	content: "";
 	position: relative;
 	bottom: -40px;
@@ -203,7 +203,7 @@ body {
 	height: 1px;
 	background: rgba(0, 0, 0, 0.15);
 	transform: translateX(-50%);
-}*/
+}
 
 .row.active {
 	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
