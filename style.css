@@ -4,10 +4,16 @@
 	box-sizing: border-box;
 }
 
+/*--------------------------------------------------------*/
+/*HTML*/
+/*--------------------------------------------------------*/
 html {
 	scrollbar-gutter: stable;
 }
 
+/*--------------------------------------------------------*/
+/*BODY*/
+/*--------------------------------------------------------*/
 body {
 	overflow-y: scroll;
 	font-family: sans-serif;
@@ -15,7 +21,9 @@ body {
 	color: #1a1a1a;
 }
 
-/* FILTRI*/
+/*--------------------------------------------------------*/
+/*CONTROL*/
+/*--------------------------------------------------------*/
 .controls {
 	display: flex;
 	align-items: center;
@@ -26,7 +34,9 @@ body {
 	flex-wrap: wrap;
 }
 
-/* Pulsanti filtri uniformi */
+/*--------------------------------------------------------*/
+/*FILTER-BUTTONS*/
+/*--------------------------------------------------------*/
 .filter-buttons button {
 	padding: 10px 22px;
 	border-radius: 12px;
@@ -51,7 +61,9 @@ body {
 	/* leggermente più chiaro per indicare attivo */
 }
 
-/* SORT TOGGLE*/
+/*--------------------------------------------------------*/
+/*SORT-TOGGLEL*/
+/*--------------------------------------------------------*/
 #sort-toggle {
 	/*margin-left: auto;*/
 	padding: 10px 20px;
@@ -91,7 +103,9 @@ body {
 	}
 }
 
-/* Banner */
+/*--------------------------------------------------------*/
+/*BANNER*/
+/*--------------------------------------------------------*/
 .banner {
 	height: 40vh;
 	width: auto;
@@ -122,7 +136,9 @@ body {
 	margin-top: 10px;
 }
 
-/* Row */
+/*--------------------------------------------------------*/
+/*ROW*/
+/*--------------------------------------------------------*/
 .row {
 	max-width: 1200px;
 	margin: 0 auto 80px;
@@ -218,7 +234,9 @@ body {
 	pointer-events: none;
 }
 
-/*Section*/
+/*--------------------------------------------------------*/
+/*SECTION*/
+/*--------------------------------------------------------*/
 section.reveal {
 	opacity: 0;
 	transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
@@ -238,7 +256,9 @@ section.reveal.visible {
 	transform: translateX(0);
 }
 
-/*Image Large - Contenitore Dakimakura Verticale*/
+/*--------------------------------------------------------*/
+/*IMAGE-LARGE*/
+/*--------------------------------------------------------*/
 .image-large {
 	flex: 0 0 260px;
 	height: 35vh;
@@ -265,7 +285,6 @@ section.reveal.visible {
 	transform: translateY(0);
 }
 
-/*Image Large - immagine Dakimakura Verticale*/
 .image-large img {
 	height: 100%;
 	object-fit: contain;
@@ -289,6 +308,9 @@ section.reveal.visible {
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
+/*--------------------------------------------------------*/
+/*CARD*/
+/*--------------------------------------------------------*/
 .card:hover .info {
 	transform: translateY(-6px);
 }
@@ -297,7 +319,9 @@ section.reveal.visible {
 	filter: contrast(1.05) saturate(1.1);
 }
 
-/*Loading*/
+/*--------------------------------------------------------*/
+/*LOADING*/
+/*--------------------------------------------------------*/
 .loading {
 	display: flex;
 	align-items: center;
@@ -307,7 +331,9 @@ section.reveal.visible {
 	justify-content: center;
 }
 
-/*Info Wrapper*/
+/*--------------------------------------------------------*/
+/*INFO-WRAPPER*/
+/*--------------------------------------------------------*/
 .info-wrapper {
 	max-width: 420px;
 	display: flex;
@@ -372,7 +398,9 @@ section.reveal.visible {
 	margin-bottom: 24px;
 }
 
-/*Testi*/
+/*--------------------------------------------------------*/
+/*TESTI*/
+/*--------------------------------------------------------*/
 .label {
 	font-family: 'Didot', 'Bodoni Moda', serif;
 	line-height: 1;
@@ -466,7 +494,9 @@ section.reveal.visible {
 	width: 120px;
 }
 
+/*--------------------------------------------------------*/
 /*FOOTER*/
+/*--------------------------------------------------------*/
 .site-footer {
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.75),
 			/* più scuro */
@@ -491,7 +521,9 @@ section.reveal.visible {
 	font-style: italic;
 }
 
-/* QR Block - Elemental Style */
+/*--------------------------------------------------------*/
+/*QR*/
+/*--------------------------------------------------------*/
 .qr-block-elemental {
 	display: inline-flex;
 	flex-direction: column;
@@ -581,9 +613,9 @@ section.reveal.visible {
 	font-family: 'Manga Temple', sans-serif;
 }
 
-
-
-/* Mobile */
+/*--------------------------------------------------------*/
+/*MOBILE*/
+/*--------------------------------------------------------*/
 /*@media(max-width:900px) {
 	.banner {
 		width: 100%;
