@@ -144,4 +144,104 @@ body {
   inset: 0;
   background-image: var(--bg-img);
   background-size: cover;
-  background-position: ce
+  background-position: center;
+  opacity: 0.3;
+  filter: blur(14px) saturate(140%);
+  pointer-events: none;
+}
+
+/* desktop offset */
+.row:nth-child(even) {
+  transform: translateX(10px);
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================
+   IMAGE LARGE
+========================= */
+.image-large {
+  flex: 0 0 260px;
+  height: 35vh;
+  aspect-ratio: 5 / 16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.image-large img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   INFO WRAPPER
+========================= */
+.info-wrapper {
+  flex: 1;
+  max-width: 420px;
+  padding: 20px 20px 20px 60px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(2px);
+  border-left: 1px solid rgba(255,255,255,0.3);
+  z-index: 2;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* =========================
+   MOBILE FIX DEFINITIVO
+========================= */
+@media (max-width: 900px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .row,
+  .row:nth-child(even),
+  .row:nth-child(odd) {
+    transform: none !important; /* 💣 elimina lo sbordo */
+    padding: 20px;
+  }
+
+  .row,
+  .row.reverse {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .image-large {
+    width: 100%;
+  }
+
+  .image-large img {
+    height: 50vh;
+  }
+
+  .info-wrapper {
+    max-width: 100%;
+    padding: 20px;
+    border-left: none;
+  }
+
+  .controls {
+    padding: 20px;
+  }
+
+  .filter-buttons button,
+  #sort-toggle {
+    transform: none !important;
+  }
+}
