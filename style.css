@@ -141,32 +141,27 @@ body {
 /*--------------------------------------------------------*/
 .row {
 	max-width: 1200px;
-	margin: 0 auto 80px;
+	/*margin: 0 auto 80px;*/
 	display: flex;
 	gap: 50px;
 	padding: 30px;
 	align-items: stretch;
 	justify-content: space-between;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 	border-radius: 12px;
 	overflow: hidden;
 	opacity: 0;
 	transform: translateY(30px);
 	animation: fadeIn 0.8s forwards;
 	animation-delay: 0.2s;
-	border-radius: 12px;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-	padding: 60px;
-	margin-bottom: 60px;
-	/*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
 	transition: transform 1.2s ease, box-shadow 1.2s ease;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
-
+/*
 .row::before {
 	content: "";
-	position: relative; /*absolute*/
+	position: relative; 
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -180,7 +175,7 @@ body {
 	filter: blur(14px) saturate(140%);
 	opacity: 0.3;
 	transform: scale(1.1);
-}
+}*/
 
 .row:hover {
 	/*transform: translateY(-5px);*/
@@ -238,7 +233,7 @@ body {
 /*--------------------------------------------------------*/
 /*SECTION*/
 /*--------------------------------------------------------*/
-section.reveal {
+/*section.reveal {
 	opacity: 0;
 	transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
 	will-change: opacity, transform;
@@ -255,7 +250,7 @@ section.reveal.right {
 section.reveal.visible {
 	opacity: 1;
 	transform: translateX(0);
-}
+}*/
 
 /*--------------------------------------------------------*/
 /*IMAGE-LARGE*/
