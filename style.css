@@ -10,7 +10,6 @@ html {
 
 body {
 	overflow-y: scroll;
-	/*per vecchi browser */
 	font-family: sans-serif;
 	background: #eee9e3;
 	color: #1a1a1a;
@@ -24,25 +23,20 @@ body {
 	padding: 30px;
 	margin-bottom: 30px;
 	justify-content: center;
-	/* 👈 centro orizzontale */
 	flex-wrap: wrap;
-	/* mobile safe */
 }
 
 /* Pulsanti filtri uniformi */
 .filter-buttons button {
 	padding: 10px 22px;
 	border-radius: 12px;
-	/* meno tondo */
 	border: none;
 	cursor: pointer;
 	font-weight: 600;
 	font-size: 0.95rem;
 	letter-spacing: 0.05em;
 	background-color: #555;
-	/* colore neutro uniforme */
 	color: #fff;
-	/* testo leggibile */
 	transition: all 0.3s ease;
 }
 
@@ -415,53 +409,6 @@ section.reveal.visible {
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Mobile */
-@media(max-width:900px) {
-	.banner {
-		width: 100%;
-	}
-
-	.row,
-	.row:nth-child(even),
-	.row:nth-child(odd) {
-		padding-left: 20px;
-		padding-right: 20px;
-		transform: none;
-	}
-
-	.row,
-	.row.reverse {
-		position: relative;
-		flex-direction: column;
-	}
-
-	.image-large img {
-		height: 50vh;
-	}
-
-	.filter-buttons {
-		gap: 8px;
-		/* più compatto su mobile */
-	}
-
-	.filter-buttons button {
-		font-size: 0.9rem;
-		padding: 8px 14px;
-	}
-
-	.filter-buttons button,
-	.filter-buttons button.active,
-	#sort-toggle,
-	#sort-toggle:active {
-		transform: none !important;
-	}
-
-	.controls {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-}
-
 .lightbox {
 	display: none;
 	/* nascosto di default */
@@ -633,3 +580,51 @@ section.reveal.visible {
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 	font-family: 'Manga Temple', sans-serif;
 }
+
+
+
+/* Mobile */
+/*@media(max-width:900px) {
+	.banner {
+		width: 100%;
+	}
+
+	.row,
+	.row:nth-child(even),
+	.row:nth-child(odd) {
+		padding-left: 20px;
+		padding-right: 20px;
+		transform: none;
+	}
+
+	.row,
+	.row.reverse {
+		position: relative;
+		flex-direction: column;
+	}
+
+	.image-large img {
+		height: 50vh;
+	}
+
+	.filter-buttons {
+		gap: 8px;
+	}
+
+	.filter-buttons button {
+		font-size: 0.9rem;
+		padding: 8px 14px;
+	}
+
+	.filter-buttons button,
+	.filter-buttons button.active,
+	#sort-toggle,
+	#sort-toggle:active {
+		transform: none !important;
+	}
+
+	.controls {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+}*/
