@@ -438,11 +438,18 @@ section.reveal.visible {
       .banner {
         width: 100%;
       }
+
+      .row,
+      .row:nth-child(even),
+      .row:nth-child(odd) {
+        padding-left: 20px;
+        padding-right: 20px;
+        transform: none;
+      }
        
       .row,
       .row.reverse {
-        flex-direction: column;
-        padding: 40px;
+        flex-direction: column; 
       }
 
       .image-large img {
