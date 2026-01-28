@@ -465,6 +465,18 @@ section.reveal.visible {
         padding: 8px 14px;
       }
        
+      .filter-buttons button,
+      .filter-buttons button.active,
+      #sort-toggle,
+      #sort-toggle:active {
+        transform: none !important;
+      }
+      
+      .controls {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+       
     }
 
 
