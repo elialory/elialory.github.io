@@ -47,7 +47,7 @@ html {
 
 /* Pulsante attivo */
 .filter-buttons button.active {
-  background-color: #777;       /* leggermente più chiaro per indicare attivo */
+  background-color: #777888;       /* leggermente più chiaro per indicare attivo */
 }
 
 
