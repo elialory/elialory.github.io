@@ -155,7 +155,7 @@ body {
 	gap: 50px;
 	padding: 30px;
 	align-items: stretch;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	margin-left: auto;
