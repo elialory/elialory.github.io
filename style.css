@@ -149,6 +149,7 @@ body {
 /*ROW*/
 /*--------------------------------------------------------*/
 .row {
+	position: relative;
 	max-width: 1200px;
 	display: flex;
 	gap: 50px;
@@ -169,7 +170,7 @@ body {
 
 .row::before {
 	content: "";
-	position: relative; 
+	position: absolute; 
 	top: 0;
 	left: 0;
 	width: 100%;
