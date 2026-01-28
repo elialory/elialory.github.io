@@ -154,7 +154,8 @@ body {
 	display: flex;
 	gap: 50px;
 	padding: 30px;
-	align-items: stretch;
+	align-items: center;
+	width: fit-content;
 	justify-content: flex-start;
 	margin-bottom: 20px;
 	margin-top: 20px;
