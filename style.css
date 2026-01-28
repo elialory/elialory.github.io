@@ -192,7 +192,7 @@ html {
 
     .row::after {
       content: "";
-      position: absolute;
+      position:  relative;
       bottom: -40px;
       left: 50%;
       width: 60%;
@@ -421,7 +421,7 @@ section.reveal.visible {
       .banner {
         width: 100%;
       }
-
+       
       .row,
       .row:nth-child(even),
       .row:nth-child(odd) {
@@ -432,6 +432,7 @@ section.reveal.visible {
        
       .row,
       .row.reverse {
+        position: relative;
         flex-direction: column; 
       }
 
