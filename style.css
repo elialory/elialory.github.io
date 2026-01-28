@@ -35,32 +35,19 @@ html {
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.05em;
-
   background-color: #555;       /* colore neutro uniforme */
   color: #fff;                  /* testo leggibile */
-  box-shadow:
-    0 0 15px rgba(0,0,0,0.4),
-    inset 0 0 10px rgba(255,255,255,0.1);
-
   transition: all 0.3s ease;
 }
 
 /* Hover */
 .filter-buttons button:hover {
   background-color: #666;
-  transform: scale(1.05);
-  box-shadow:
-    0 0 25px rgba(0,0,0,0.5),
-    inset 0 0 12px rgba(255,255,255,0.15);
 }
 
 /* Pulsante attivo */
 .filter-buttons button.active {
   background-color: #777;       /* leggermente più chiaro per indicare attivo */
-  box-shadow:
-    0 0 30px rgba(0,0,0,0.6),
-    inset 0 0 15px rgba(255,255,255,0.2);
-  transform: scale(1.07);
 }
 
 
@@ -71,11 +58,9 @@ html {
   padding: 10px 20px;
   font-size: 0.9rem;
   letter-spacing: 0.1em;
-
   border-radius: 14px;
   border: none;
   cursor: pointer;
-
   color: #fff;
   background: linear-gradient(
     135deg,
@@ -92,9 +77,7 @@ html {
 }
 
 #sort-toggle:hover {
-  box-shadow:
-    0 0 20px rgba(255, 110, 196, 0.4),
-    inset 0 0 25px rgba(255,255,255,0.25);
+
 }
 
 #sort-toggle:active {
