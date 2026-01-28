@@ -329,6 +329,7 @@ section.reveal.visible {
 	text-align: left;
 	padding-left: 60px;
 	transition-delay: 0.25s;
+	margin-left: auto;
 }
 
 .info-wrapper::before {
