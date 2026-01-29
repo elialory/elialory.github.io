@@ -606,6 +606,18 @@ section.reveal.visible {
       height: 28svh;
     }
 
+	.info-wrapper {
+      max-width: none;
+      width: auto;
+      padding: 14px;
+      align-items: flex-start;
+    }
+
+    .info {
+      align-items: flex-start;
+      text-align: left;
+    }
+
 	.controls {
 		max-width: 100%;
 		overflow-x: hidden;
