@@ -597,8 +597,13 @@ section.reveal.visible {
 		align-items: center;
 	}
 
+    .image-large {
+      flex: 0 0 140px;   /* prima 260px */
+      height: auto;
+    }
+
     .image-large img {
-        height: 30svh;
+      height: 28svh;
     }
 
 	.controls {
