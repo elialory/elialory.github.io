@@ -585,10 +585,12 @@ section.reveal.visible {
     margin-top: 2px;
     }
 
-	.row {
+    .row {
+      justify-content: flex-start; /* ❗ niente space-around */
+      gap: 20px;
       padding: 0px;
-	}
-	
+    }   
+
 	.row,
 	.row.reverse {
 		position: relative;
