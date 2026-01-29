@@ -99,16 +99,17 @@ body {
 	border: none;
 	cursor: pointer;
 	color: #fff;
-	background: linear-gradient(135deg, rgba(255, 110, 196, 0.25), rgba(120, 115, 245, 0.25));
-	backdrop-filter: blur(10px);
+	background-color: #555;
 	box-shadow: 0 0 0 rgba(255, 255, 255, 0), inset 0 0 20px rgba(255, 255, 255, 0.15);
 	transition: all 0.3s ease;
 }
 
-#sort-toggle:hover {}
+#sort-toggle:hover {
+	background-color: #666;
+}
 
 #sort-toggle:active {
-	transform: scale(0.94);
+	background-color: #777888;
 }
 
 #sort-toggle.pulse {
