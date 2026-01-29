@@ -171,8 +171,6 @@ body {
     margin-right: auto;
 	border-radius: 12px;
 	overflow: hidden;
-	/*opacity: 0;
-	transform: translateY(30px);*/
 	animation: fadeIn 0.8s forwards;
 	animation-delay: 0.2s;
 	transition: transform 1.2s ease, box-shadow 1.2s ease;
@@ -214,10 +212,8 @@ body {
 	position: relative;
 	bottom: -40px;
 	left: 50%;
-	/*width: 60%;*/
 	height: 1px;
 	background: rgba(0, 0, 0, 0.15);
-	/*transform: translateX(-50%);*/
 }
 
 .row::before,
@@ -316,7 +312,7 @@ section.reveal.visible {
 	background: rgba(255, 255, 255, 0.25);
 	z-index: 2;
 	transition-delay: 0.25s;
-	margin-left: auto;
+	/*margin-left: auto;*/
 }
 
 .info-wrapper::before {
