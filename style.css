@@ -622,4 +622,15 @@ section.reveal.visible {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
+	  .label {
+    font-size: 2rem;
+  }
+
+  .epitet {
+    font-size: 0.9rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
+  }
 }
