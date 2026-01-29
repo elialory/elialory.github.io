@@ -216,7 +216,7 @@ body {
 	position: relative;
 	bottom: -40px;
 	left: 50%;
-	width: 60%;
+	/*width: 60%;*/
 	height: 1px;
 	background: rgba(0, 0, 0, 0.15);
 	transform: translateX(-50%);
