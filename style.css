@@ -573,19 +573,10 @@ section.reveal.visible {
 /*--------------------------------------------------------*/
 /*MOBILE*/
 /*--------------------------------------------------------*/
-/*@media(max-width:900px) {
+@media(max-width:900px) {
 	.banner {
 		width: 100%;
 	}
-
-	.row,
-	.row:nth-child(even),
-	.row:nth-child(odd) {
-		padding-left: 20px;
-		padding-right: 20px;
-		transform: none;
-	}
-
 	.row,
 	.row.reverse {
 		position: relative;
@@ -596,24 +587,8 @@ section.reveal.visible {
 		height: 50vh;
 	}
 
-	.filter-buttons {
-		gap: 8px;
-	}
-
-	.filter-buttons button {
-		font-size: 0.9rem;
-		padding: 8px 14px;
-	}
-
-	.filter-buttons button,
-	.filter-buttons button.active,
-	#sort-toggle,
-	#sort-toggle:active {
-		transform: none !important;
-	}
-
 	.controls {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
-}*/
+}
