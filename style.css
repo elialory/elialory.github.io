@@ -303,20 +303,18 @@ section.reveal.visible {
 /*--------------------------------------------------------*/
 .info-wrapper {
 	max-width: 420px;
-	/*display: flex;
-	align-items: flex-start;
-	justify-content: center;*/
+
+	display: flex;            
+    align-items: center;        
+    justify-content: center;
+	
 	width: 100%;
 	flex-direction: column;
 	padding: 20px;
-	/*position: relative;
-	overflow: hidden;*/
+
 	color: #111;
 	background: rgba(255, 255, 255, 0.25);
-	/*backdrop-filter: blur(2px);*/
-	/*-webkit-backdrop-filter: blur(2px);*/
 	z-index: 2;
-	/*text-align: left;*/
 	transition-delay: 0.25s;
 	margin-left: auto;
 }
