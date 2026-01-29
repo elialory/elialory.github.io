@@ -256,7 +256,6 @@ section.reveal.visible {
 	height: 35vh;
 	aspect-ratio: 5 / 16;
 	flex-shrink: 0;
-	/* importantissimo */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -280,7 +279,6 @@ section.reveal.visible {
 .image-large img {
 	height: 100%;
 	object-fit: contain;
-	/* ← chiave */
 	transition: transform 1.6s ease;
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 	border-radius: 8px;
@@ -315,11 +313,10 @@ section.reveal.visible {
 	overflow: hidden;*/
 	color: #111;
 	background: rgba(255, 255, 255, 0.25);
-	backdrop-filter: blur(2px);
+	/*backdrop-filter: blur(2px);*/
 	/*-webkit-backdrop-filter: blur(2px);*/
 	z-index: 2;
-	text-align: left;
-	padding-left: 60px;
+	/*text-align: left;*/
 	transition-delay: 0.25s;
 	margin-left: auto;
 }
