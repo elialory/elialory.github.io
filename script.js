@@ -56,7 +56,7 @@ const data = [
         "square_image": "Artworks/Yue/square.jpg",
         "vertical_image": "Artworks/Yue/vertical.jpg",
         "color": "water",
-        "stato": 2,
+        "stato": 1,
         "category": "Aang"
     },
     {
