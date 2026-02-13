@@ -94,7 +94,7 @@ const data = [
         "nick": "Too good for Ozai.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Ursa/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "vertical_image": "Artworks/Ursa/vertical.jpg",
         "color": "fire",
         "stato": 2,
         "category": "Aang"
