@@ -96,7 +96,7 @@ const data = [
         "square_image": "Artworks/Ursa/square.jpg",
         "vertical_image": "Artworks/Ursa/vertical.jpg",
         "color": "fire",
-        "stato": 2,
+        "stato": 1,
         "category": "Aang"
     },
     {
