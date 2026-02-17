@@ -4,7 +4,7 @@ const data = [
         "nick": "My mother used to be on a bodypillow...",
         "description": "Gentle yet passionate, Katara uses waterbending for sensual experience. Her caring nature makes you feel desired.",
         "square_image": "Artworks/Katara/square.jpg",
-        "vertical_image": "Artworks/Katara/vertical.jpg",
+        "front_image": "Artworks/Katara/front.jpg",
         "color": "water",
         "stato": 1,
         "category": "Aang"
@@ -14,7 +14,7 @@ const data = [
         "nick": "She bends: Earth, Metal, You.",
         "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
         "square_image": "Artworks/Toph/square.jpg",
-        "vertical_image": "Artworks/Toph/vertical.jpg",
+        "front_image": "Artworks/Toph/front.jpg",
         "color": "earth",
         "stato": 1,
         "category": "Aang"
@@ -24,7 +24,7 @@ const data = [
         "nick": "Never stick it in crazy.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Azula/square.jpg",
-        "vertical_image": "Artworks/Azula/vertical.jpg",
+        "front_image": "Artworks/Azula/front.jpg",
         "color": "fire",
         "stato": 1,
         "category": "Aang"
@@ -34,7 +34,7 @@ const data = [
         "nick": "Goth mommy with whip.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/June/square.jpg",
-        "vertical_image": "Artworks/June/vertical.jpg",
+        "front_image": "Artworks/June/front.jpg",
         "color": "earth",
         "stato": 1,
         "category": "Aang"
@@ -44,7 +44,7 @@ const data = [
         "nick": "No really. How is Sokka doing it?",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Suki/square.jpg",
-        "vertical_image": "Artworks/Suki/vertical.jpg",
+        "front_image": "Artworks/Suki/front.jpg",
         "color": "earth",
         "stato": 1,
         "category": "Aang"
@@ -54,7 +54,7 @@ const data = [
         "nick": "That's rough buddy",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Yue/square.jpg",
-        "vertical_image": "Artworks/Yue/vertical.jpg",
+        "front_image": "Artworks/Yue/front.jpg",
         "color": "water",
         "stato": 1,
         "category": "Aang"
@@ -64,7 +64,7 @@ const data = [
         "nick": "...",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Mai/square.jpg",
-        "vertical_image": "Artworks/Mai/vertical.jpg",
+        "front_image": "Artworks/Mai/front.jpg",
         "color": "fire",
         "stato": 1,
         "category": "Aang"
@@ -74,7 +74,7 @@ const data = [
         "nick": "Best Girl.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/TyLee/square.jpg",
-        "vertical_image": "Artworks/TyLee/vertical.jpg",
+        "front_image": "Artworks/TyLee/front.jpg",
         "color": "air",
         "stato": 1,
         "category": "Aang"
@@ -84,7 +84,7 @@ const data = [
         "nick": "Southern Tribe's Milf.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Kya/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "water",
         "stato": 2,
         "category": "Aang"
@@ -94,7 +94,7 @@ const data = [
         "nick": "Too good for Ozai.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Ursa/square.jpg",
-        "vertical_image": "Artworks/Ursa/vertical.jpg",
+        "front_image": "Artworks/Ursa/front.jpg",
         "color": "fire",
         "stato": 1,
         "category": "Aang"
@@ -104,7 +104,7 @@ const data = [
         "nick": "There is no Rule34.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/JoDee/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Aang"
@@ -114,7 +114,7 @@ const data = [
         "nick": "REAL Best Girl",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Jin/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Aang"
@@ -124,7 +124,7 @@ const data = [
         "nick": "One of the top ten Tomboys ever made.",
         "description": "Powerful and Passionate, Korra uses bending for an intense experience. Dominant yet craves tenderness. A wild ride of pleasure.",
         "square_image": "Artworks/Korra/square.jpg",
-        "vertical_image": "Artworks/Korra/vertical.jpg",
+        "front_image": "Artworks/Korra/front.jpg",
         "color": "water",
         "stato": 1,
         "category": "Korra",
@@ -134,7 +134,7 @@ const data = [
         "nick": "Look... don't treat her bad. She's a good girl.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Opal/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Korra"
@@ -144,7 +144,7 @@ const data = [
         "nick": "4 kids. Still sexy. Best Milf.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Pema/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "air",
         "stato": 2,
         "category": "Korra"
@@ -154,7 +154,7 @@ const data = [
         "nick": "Police Officer Roleplay.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Lin/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Korra"
@@ -164,7 +164,7 @@ const data = [
         "nick": "I don't really know what to write here.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Suyin/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Korra"
@@ -174,7 +174,7 @@ const data = [
         "nick": "Southern Tribe's Gilf.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Kya2/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "water",
         "stato": 2,
         "category": "Korra"
@@ -184,7 +184,7 @@ const data = [
         "nick": "NOT DESKA!",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Eska/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "water",
         "stato": 2,
         "category": "Korra"
@@ -194,7 +194,7 @@ const data = [
         "nick": "I don't want to fix her. I want her to ruin me.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/MingWa/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "water",
         "stato": 2,
         "category": "Korra"
@@ -204,7 +204,7 @@ const data = [
         "nick": "Zaheer has good taste.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Pli/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "fire",
         "stato": 2,
         "category": "Korra"
@@ -214,7 +214,7 @@ const data = [
         "nick": "She did a thing for you.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/ZhuLi/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "water",
         "stato": 2,
         "category": "Korra"
@@ -224,7 +224,7 @@ const data = [
         "nick": "VVhen she vvas there the trains arrived on time.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Kuvira/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Korra"
@@ -234,7 +234,7 @@ const data = [
         "nick": "Korra's owner.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Asami/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "fire",
         "stato": 2,
         "category": "Korra"
@@ -244,7 +244,7 @@ const data = [
         "nick": "I really shouldn't stick my dick in there... however-",
         "description": "hah ah got it? No... Caus- nevermind",
         "square_image": "Artworks/Raava/square.jpg",
-        "vertical_image": "Artworks/PlaceHolder/vertical.jpg",
+        "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "air",
         "stato": 2,
         "category": "Korra",
@@ -313,7 +313,7 @@ function renderArtworks(category = activeCategory) {
         
         section.innerHTML = `
             <div class="image-large">
-                <img src="${artwork.vertical_image}" alt="${artwork.title}">
+                <img src="${artwork.front_image}" alt="${artwork.title}">
             </div>
             <div class="info-wrapper">
                 <div class="info">
