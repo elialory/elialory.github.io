@@ -84,9 +84,9 @@ const data = [
         "nick": "Southern Tribe's Milf.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Kya/square.jpg",
-        "front_image": "Artworks/PlaceHolder/front.jpg",
+        "front_image": "Artworks/Kya/front.jpg",
         "color": "water",
-        "stato": 2,
+        "stato": 1,
         "category": "Aang"
     },
     {
