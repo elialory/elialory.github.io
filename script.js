@@ -104,9 +104,9 @@ const data = [
         "nick": "There is no Rule34.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/JoDee/square.jpg",
-        "front_image": "Artworks/PlaceHolder/front.jpg",
+        "front_image": "Artworks/JoDee/front.jpg",
         "color": "earth",
-        "stato": 2,
+        "stato": 1,
         "category": "Aang"
     },
     {
