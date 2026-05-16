@@ -116,7 +116,7 @@ const data = [
         "square_image": "Artworks/Jin/square.jpg",
         "front_image": "Artworks/Jin/front.jpg",
         "color": "earth",
-        "stato": 2,
+        "stato": 1,
         "category": "Aang"
     },
     {
