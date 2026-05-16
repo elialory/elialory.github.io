@@ -114,7 +114,7 @@ const data = [
         "nick": "REAL Best Girl",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Jin/square.jpg",
-        "front_image": "Artworks/PlaceHolder/front.jpg",
+        "front_image": "Artworks/Jin/front.jpg",
         "color": "earth",
         "stato": 2,
         "category": "Aang"
