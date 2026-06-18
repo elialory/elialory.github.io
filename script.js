@@ -318,11 +318,12 @@ function renderArtworks(category = activeCategory) {
             <div class="info-wrapper">
                 <div class="info">
                     <p class="label">${artwork.title}</p>
-                    <p class="epitet">${artwork.nick}</p>
+                    
                 </div>
             </div>
         `;
-        
+
+        //<p class="epitet">${artwork.nick}</p>
         section.style.setProperty("--bg-img", `url(${artwork.square_image})`);
         container.appendChild(section);
 
