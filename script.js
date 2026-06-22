@@ -27,7 +27,7 @@ const data = [
         "front_image": "Artworks/Toph_movie/front.jpg",
         "color": "earth",
         "stato": 1,
-        "category": "Avatar_movie"
+        "category": "Avatarmovie"
     },
     {
         "title": "Azula",
