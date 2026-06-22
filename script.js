@@ -20,6 +20,16 @@ const data = [
         "category": "Aang"
     },
     {
+        "title": "Toph Beifong",
+        "nick": "She bends: Earth, Metal, You.",
+        "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
+        "square_image": "Artworks/Toph_movie/square.jpg",
+        "front_image": "Artworks/Toph_movie/front.jpg",
+        "color": "earth",
+        "stato": 1,
+        "category": "Avatar_movi"
+    },
+    {
         "title": "Azula",
         "nick": "Never stick it in crazy.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
