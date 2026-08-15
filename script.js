@@ -10,6 +10,16 @@ const data = [
         "category": "Aang"
     },
     {
+        "title": "Katara",
+        "nick": "My mother used to be on a bodypillow...",
+        "description": "Gentle yet passionate, Katara uses waterbending for sensual experience. Her caring nature makes you feel desired.",
+        "square_image": "Artworks/Katara_movie/square.jpg",
+        "front_image": "Artworks/Katara_movie/front.jpg",
+        "color": "water",
+        "stato": 1,
+        "category": "Avatarmovie"
+    },
+    {
         "title": "Toph Beifong",
         "nick": "She bends: Earth, Metal, You.",
         "description": "Feisty and bold, Toph takes charge in bed. Her earthbending creates unique sensations, making you feel good.",
