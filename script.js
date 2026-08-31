@@ -254,7 +254,7 @@ const data = [
         "nick": "Korra's owner.",
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/Asami/square.jpg",
-        "front_image": "Artworks/PlaceHolder/front.jpg",
+        "front_image": "Artworks/Asami/front.jpg",
         "color": "fire",
         "stato": 1,
         "category": "Korra"
