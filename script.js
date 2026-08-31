@@ -256,7 +256,7 @@ const data = [
         "square_image": "Artworks/Asami/square.jpg",
         "front_image": "Artworks/PlaceHolder/front.jpg",
         "color": "fire",
-        "stato": 2,
+        "stato": 1,
         "category": "Korra"
     },
     {
