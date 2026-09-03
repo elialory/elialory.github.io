@@ -235,7 +235,7 @@ const data = [
         "description": "A dominant firebender, Azula demands submission. Her passion and skill leave you breathless, begging for more.",
         "square_image": "Artworks/ZhuLi/square.jpg",
         "front_image": "Artworks/PlaceHolder/front.jpg",
-        "color": "water",
+        "color": "earth",
         "stato": 2,
         "category": "Korra"
     },
