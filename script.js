@@ -264,9 +264,9 @@ const data = [
         "nick": "I really shouldn't stick my dick in there... however-",
         "description": "hah ah got it? No... Caus- nevermind",
         "square_image": "Artworks/Raava/square.jpg",
-        "front_image": "Artworks/PlaceHolder/front.jpg",
+        "front_image": "Artworks/Raava/front.jpg",
         "color": "air",
-        "stato": 2,
+        "stato": 1,
         "category": "Korra",
     }
 ];
