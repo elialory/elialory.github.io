@@ -263,7 +263,7 @@ const data = [
         "title": "Raava",
         "nick": "I really shouldn't stick my dick in there... however-",
         "description": "hah ah got it? No... Caus- nevermind",
-        "square_image": "Artworks/Raava/square.jpg",
+        "square_image": "Artworks/Raava/square.jpg", 
         "front_image": "Artworks/Raava/front.jpg",
         "color": "air",
         "stato": 1,
